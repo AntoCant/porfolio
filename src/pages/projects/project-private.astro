@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/main.astro";
+import FeatureList from "../../components/FeatureList.astro";
+import features from "../../collections/features.json";
+
+const projectTitle = "Gestión de Estudiantes - Proyecto Privado";
+const projectDescription = "Este proyecto se centró en la creación de una plataforma de gestión de estudiantes para una academia, con características avanzadas de manejo de contenido y notificaciones.";
+
+---
+
+<Layout title={projectTitle}>
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <h1 class="text-4xl font-bold leading-tight text-neutral-900 dark:text-neutral-100">
+      {projectTitle}
+    </h1>
+    <p class="mt-8 text-base text-neutral-600 dark:text-neutral-400">
+      {projectDescription}
+    </p>
+
+    <h2 class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200">
+      Principales Características
+    </h2>
+
+    <FeatureList items={features} />
+
+    <h2 class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200">
+      Desafíos y Soluciones
+    </h2>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      En este proyecto, uno de los mayores desafíos fue la integración de servicios externos, solucionado con la implementación de APIs RESTful que garantizan la interoperabilidad.
+    </p>
+
+    <h2 class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200">
+      Impacto o Resultados
+    </h2>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      El proyecto ha mejorado significativamente la eficiencia en la gestión de estudiantes, reduciendo el tiempo necesario para administrar datos en un 30%.
+    </p>
+
+    <h2 class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200">
+      Galería de Imágenes
+    </h2>
+    
+  </section>
+</Layout>
+
+
+

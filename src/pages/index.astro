@@ -1,12 +1,14 @@
 ---
-import Button from "../components/button.astro";
 import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
-import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
+import CvButon from "../components/cvButon.astro";
+import Skills from "../components/skills.astro";
+import EmailDisplay from "../components/emailDisplay.astro";
+import Certificate from "../components/home/certificate.astro";
 ---
 
-<Layout title="Kai">
+<Layout title="Anto">
   <div
     class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
   >
@@ -15,26 +17,77 @@ import Layout from "../layouts/main.astro";
         <h1
           class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
         >
-          Hello, I'm Kai.
+          Hola, Soy Anto.
         </h1>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          I'm a front-end programmer living in Nanjing. <br
+          Desarrollador Back-End especializado en Java y Spring Boot, con una pasión por crear soluciones que realmente marcan la diferencia. A lo largo de mi carrera, he implementado arquitecturas de microservicios y sistemas de seguridad robustos con Spring Security y JWT, lo que me ha permitido mejorar la eficiencia y seguridad de proyectos complejos. <br
             class="hidden lg:block"
-          />I focus on Web development.
+          />Me gusta trabajar con metodologías ágiles y aplicar principios de clean code para asegurar que cada proyecto sea escalable, eficiente y de alta calidad.
         </p>
         <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
-          I can help you out with:
+          Mis habilidades principales son:
         </p>
         <ul
           class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
         >
-          <li>Vue.js Development</li>
-          <li>React.js Development</li>
-          <li>Node.js Development</li>
-          <li>Website Design</li>
-          <li>and more...</li>
+          <li>Java</li>
+          <li>Springboot</li>
+          <li>Spring Cloud</li>
+          <li>Seguridad con Spring Security y JWT</li>
+          <li>Arquitectura de Microservicios</li>
+          <li>PostgreSQL</li>
+          <li>Docker</li>
+          <li>Maven y Gradle</li>
+          <li>Git y GitHub</li> 
         </ul>
-        <Button text="Follow me on 𝕏" link="https://twitter.com/0xKaiBi" />
+        <CvButon text="Mi CV" link="/Antonio Canteros.pdf" />
+        
+        <!-- Nuevo div contenedor para los íconos -->
+        <div class="flex space-x-4 mt-11 items-center">
+          <a
+            href="https://www.linkedin.com/in/antonio-canteros/"
+            target="_blank"
+            class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white"
+            style="vertical-align: middle;"
+          >
+            <span class="sr-only">LinkedIn</span>
+            <svg
+              class="w-8 h-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.447 20.452H16.88v-5.568c0-1.328-.027-3.036-1.849-3.036-1.85 0-2.133 1.444-2.133 2.937v5.667h-3.568V9h3.422v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.603 0 4.267 2.368 4.267 5.452v6.728zM5.337 7.433a2.073 2.073 0 110-4.146 2.073 2.073 0 010 4.146zm1.784 13.019H3.554V9h3.567v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+              />
+            </svg>
+          </a>
+        
+          <a
+            href="https://github.com/AntoCant"
+            target="_blank"
+            class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white"
+            style="vertical-align: middle;"
+          >
+            <span class="sr-only">GitHub</span>
+            <svg
+              class="w-10 h-10"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Fin del nuevo div contenedor -->
+        
+        <EmailDisplay email="antonio.canteros.alberto@gmail.com" />
       </div>
       <div
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
@@ -69,8 +122,13 @@ import Layout from "../layouts/main.astro";
     </div>
   </div>
 
-  <Separator text="Check out my projects" />
+  <Separator text="Mis Hard Skills" />
+  <Skills />
+  <Separator text="Mis proyectos" />
   <Projects />
-  <Separator text="Some of my writing" />
-  <Writings />
+  <Separator text="Mis Certificados" />
+  <Certificate />
 </Layout>
+
+
+
