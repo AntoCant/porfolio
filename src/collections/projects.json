@@ -1,20 +1,27 @@
 [
 	{
-		"name": "Email.ML",
-		"description": "Minimalist temporary Email.",
-		"image": "/assets/images/projects/email.ml.png",
-		"url": "https://email.ml"
+		"name": "Aplicación Movil",
+		"description": "Implementacion de gestión de estudiantes y cursos, implementado con Java y Spring Boot.",
+		"image": "/assets/images/projects/3.png",
+		"url": "/projects/project-private"
 	},
 	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
+		"name": "E-commerce 2.0",
+		"description": "Proyecto en constante evolución y expansión de funcionalidades.",
+		"image": "/assets/images/projects/1.png",
+		"url": "https://github.com/CantMagg-tech-works"
 	},
 	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
+		"name": "Porfolio personal",
+		"description": "Explico un poco como fue la creación de este sitio.",
+		"image": "/assets/images/projects/4.png",
+		"url": "/projects/porfolio"
+	},
+	{
+		"name": "E-commerce (Solucion Practica)",
+		"description": "Back-end diseñado para brindar una solución práctica y eficiente.",
+		"image": "/assets/images/projects/2.png",
+		"url": "https://github.com/Team-6-R-L-Academy-Backend"
 	}
+	
 ]

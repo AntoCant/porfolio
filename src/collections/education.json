@@ -1,0 +1,16 @@
+[
+	{
+		"dates": "AGOSTO 2024 - ACTUALIDAD",
+		"title": "Licenciatura Informatica",
+		"institution": "Universidad Siglo 21",
+		"description": "Desarrollador de aplicaciones wed con java y springboot.",
+		"logo": "/assets/images/education/siglo21.png"
+	},
+	{
+		"dates": "diciembre 2006 · FINALIZADO",
+		"title": "Tecnico Electromecanico",
+		"institution": "Instituto Tecnologico San Bonifacio",
+		"description": "Instituto tecnico con orientacion a bienes y servicios.",
+		"logo": "/assets/images/education/2.png"
+	}
+]

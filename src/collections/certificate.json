@@ -1,0 +1,21 @@
+[
+	{
+		"name": "Microservicios con Spring Cloud",
+		"description": "Curso de Microservicios con Spring Cloud",
+		"image": "/assets/images/certificate/cloud.png",
+		"url": "https://todocodeacademy.com/certificate/bxh/"
+	},
+	{
+		"name": "Bases de datos relacionales",
+		"description": "Introducción a bases de datos relacionales con (MySQL).",
+		"image": "/assets/images/certificate/sql.png",
+		"url": "https://todocodeacademy.com/certificate/rdt/"
+	},
+    {
+		"name": "Git y GitHub",
+		"description": "Introduccion a Git y GitHub.",
+		"image": "/assets/images/certificate/git.png",
+		"url": "https://todocodeacademy.com/certificate/6oc/"
+	}
+	
+]

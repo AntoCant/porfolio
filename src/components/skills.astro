@@ -1,0 +1,42 @@
+---
+const skills = [
+  { name: 'Java', icon: '/assets/images/icons/java.png' },
+  { name: 'Springboot', icon: '/assets/images/icons/springboot.png' },
+  { name: 'Maven', icon: '/assets/images/icons/maven.png' },
+  { name: 'Gradle', icon: '/assets/images/icons/gradle.png' },
+  { name: 'PostgreSQL', icon: '/assets/images/icons/postgres.png' },
+  { name: 'Swagger', icon: '/assets/images/icons/swagger.png' },
+  { name: 'Docker', icon: '/assets/images/icons/docker.png' },
+  { name: 'Jwt', icon: '/assets/images/icons/jwt.png' },
+  { name: 'Git', icon: '/assets/images/icons/git.png' },
+  { name: 'GitHub', icon: '/assets/images/icons/github.png' },
+];
+---
+
+<section class="relative z-20 max-w-4xl mx-auto my-12 px-7 lg:px-0">
+    <h2 class="text-2xl font-bold mb-4 text-black dark:text-white">Mis Hard Skills</h2>
+    <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+        A lo largo de mi carrera, he tenido la oportunidad de aprender y perfeccionar un conjunto de herramientas y tecnologías que me permiten dar lo mejor de mí en cada proyecto. Estas son las habilidades principales que he desarrollado y que me permiten enfrentar cualquier desafío en el mundo del desarrollo Back-End.
+      </p>
+    <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+      {skills.map(skill => (
+        <li 
+          class="flex flex-col items-center justify-between text-center p-4 bg-transparent rounded-lg border border-dashed border-neutral-500 dark:border-neutral-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+        >
+          <div class="flex items-center justify-center w-24 h-16 overflow-hidden rounded-lg">
+            <img src={skill.icon} alt={skill.name} class="w-full h-auto object-contain" />
+          </div>
+          <p class="mt-4 text-sm font-medium text-black dark:text-white">{skill.name}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+  
+  
+
+
+
+
+
+
+

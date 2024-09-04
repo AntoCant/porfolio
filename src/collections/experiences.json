@@ -1,23 +1,16 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
+		"dates": "JULIO 2023 - ACTUALIDAD",
+		"role": "Back-end Developer",
+		"company": "Refactoring Life",
+		"description": "Desarrollador de aplicaciones wed con java y springboot.",
+		"logo": "/assets/images/experiences/1.png"
 	},
 	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
-	},
-	{
-		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
-		"description": "Intern, involved in the development of Internet of Things cloud systems.",
-		"logo": "/assets/images/experiences/wulian.ico"
+		"dates": "diciembre 2010 · ACTUALIDAD",
+		"role": "Responsable de equipos Electricos",
+		"company": "LANXESS",
+		"description": "Mantenimiento de equipos Electricos.",
+		"logo": "/assets/images/experiences/lanxess.png"
 	}
 ]

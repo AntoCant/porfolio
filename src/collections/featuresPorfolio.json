@@ -1,0 +1,18 @@
+[
+    {
+      "title": "Personalización de una plantilla Astro.",
+      "description": "Administración completa de estudiantes, desde el registro hasta el seguimiento de su progreso."
+    },
+    {
+      "title": "Creación de secciones y componentes personalizados.",
+      "description": "Permite la carga, almacenamiento y compartición segura de documentos."
+    },
+    {
+      "title": "Despliegue en VPS personal usando Docker.",
+      "description": "Sistema de notificaciones automatizadas para mantener a los estudiantes informados."
+    },
+    {
+      "title": "Optimización de tráfico con Nginx.",
+      "description": "Implementación de OAuth2 para una autenticación robusta."
+    }
+  ]
