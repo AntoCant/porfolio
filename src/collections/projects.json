@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Aplicación Movil",
-		"description": "Implementacion de gestión de estudiantes y cursos, implementado con Java y Spring Boot.",
+		"description": "Implementacion de gestión de estudiantes y cursos.",
 		"image": "/assets/images/projects/3.png",
 		"url": "/projects/project-private"
 	},
@@ -22,5 +22,11 @@
 		"description": "Back-end diseñado para brindar una solución práctica y eficiente.",
 		"image": "/assets/images/projects/2.png",
 		"url": "https://github.com/Team-6-R-L-Academy-Backend"
+	},
+	{
+		"name": "Aplicación Movil",
+		"description": "Implementacion de gestión de estudiantes y cursos.",
+		"image": "/assets/images/projects/3.png",
+		"url": "/projects/project-private"
 	}
 ]

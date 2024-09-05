@@ -2,23 +2,27 @@
 import Layout from "../../layouts/main.astro";
 import FeatureListPorfolio from "../../components/featureListPorfolio.astro";
 import features from "../../collections/featuresPorfolio.json";
-
-const projectTitle = "Mi Portafolio";
-const projectDescription =
-  "Este portafolio fue desarrollado para mostrar mis proyectos y habilidades en desarrollo Back-End, utilizando una plantilla de Astro personalizada y desplegado en mi VPS personal con Docker y Nginx.";
+import Carrucel from "../../components/carousel.astro";
+import Separator from "../../components/home/separator.astro";
 ---
 
-<Layout title={projectTitle}>
+<Layout title="Mi Portafolio">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <h1
       class="text-4xl font-bold leading-tight text-neutral-900 dark:text-neutral-100"
     >
-      {projectTitle}
+      Mi Portafolio
     </h1>
 
     <p class="mt-8 text-base text-neutral-600 dark:text-neutral-400">
-      {projectDescription}
+      Este portafolio fue desarrollado para mostrar mis proyectos y habilidades
+      en desarrollo Back-End, utilizando una plantilla de Astro personalizada y
+      desplegado en mi VPS personal con Docker y Nginx.
     </p>
+
+    <Separator text="Galería de Imágenes" />
+    <Carrucel />
+    <Separator text="Principales Características" />
 
     <h2
       class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
@@ -27,6 +31,7 @@ const projectDescription =
     </h2>
 
     <FeatureListPorfolio items={features} />
+    <Separator text="Desafíos y Soluciones" />
 
     <h2
       class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
@@ -34,35 +39,62 @@ const projectDescription =
       Desafíos y Soluciones
     </h2>
     <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      El principal desafío fue la integración de nuevas secciones personalizadas
-      en una plantilla existente, especialmente al añadir funcionalidad
-      adicional para proyectos y componentes únicos. Para superar este reto,
-      aproveché la flexibilidad de Astro para crear componentes reutilizables y
-      usé Docker para asegurar que el entorno de desarrollo fuera coherente con
-      el de producción.
+      El principal desafío que enfrenté en este proyecto fue la adaptación de
+      una plantilla preexistente en Astro a mis necesidades particulares. A
+      pesar de no tener experiencia avanzada en front-end, tuve que incorporar
+      secciones completamente nuevas, personalizar componentes y añadir
+      funcionalidades que no estaban presentes en la plantilla original.
     </p>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      Uno de los aspectos más complejos fue la implementación de un carrusel de
+      imágenes y la cuadrícula de habilidades. Estas funcionalidades no estaban
+      contempladas en el diseño base, por lo que tuve que estudiar cómo
+      funcionan los componentes en Astro, entender su arquitectura y crear estos
+      elementos desde cero, respetando la estructura modular de la plantilla
+      para no romper la consistencia del código.
+    </p>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      Otro reto significativo fue la creación de nuevas páginas personalizadas
+      para cada uno de los proyectos, lo que implicó modificar el enrutamiento
+      de la aplicación y generar contenido dinámico que fuera compatible tanto
+      con las nuevas funcionalidades como con la estructura original del sitio.
+      Esto requirió mucha experimentación y pruebas para asegurarme de que todo
+      funcionara correctamente, tanto en el entorno de desarrollo como en
+      producción.
+    </p>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      Para asegurar que las modificaciones no afectaran negativamente el
+      rendimiento y la coherencia del proyecto, decidí utilizar Docker desde el
+      principio. Al empaquetar el entorno de desarrollo dentro de un contenedor
+      Docker, pude replicar de manera exacta el entorno de producción, lo que me
+      permitió identificar y resolver problemas antes del despliegue final. Esto
+      garantizó que las nuevas funcionalidades, como el carrusel y la cuadrícula
+      de habilidades, funcionaran de manera fluida en mi VPS personal.
+    </p>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      Además, me enfrenté a desafíos técnicos relacionados con la configuración
+      de Nginx y la gestión del tráfico en mi VPS. Para resolverlo, estudié y
+      apliqué conceptos de optimización de servidores web, configurando Nginx
+      para manejar de manera eficiente las solicitudes y asegurar una carga
+      rápida de la página.
+    </p>
+
+    <Separator text="Comcluciones y aprendisaje" />
 
     <h2
       class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
     >
-      Impacto o Resultados
+      Concluciones
     </h2>
     <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      El portafolio ha mejorado significativamente la forma en que presento mis
-      proyectos y habilidades. Me permite mantener una presencia profesional en
-      línea, mostrando mis capacidades técnicas y organizando mi trabajo de
-      forma clara y visual. Además, el despliegue en mi propio VPS demuestra mi
-      experiencia en la gestión de infraestructura y despliegue de proyectos.
-    </p>
-
-    <h2
-      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
-    >
-      Galería de Imágenes
-    </h2>
-    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      A continuación, se muestran capturas de pantalla del portafolio en
-      diferentes dispositivos y vistas clave.
+      Finalmente, una de las lecciones más importantes que aprendí fue la
+      importancia de las pruebas y la iteración constante. Cada nueva
+      funcionalidad añadida requería varias pruebas y ajustes para que el
+      resultado final fuera óptimo tanto en términos de rendimiento como de
+      diseño, algo que fue especialmente difícil dado que mi enfoque principal
+      es el desarrollo de backend. Sin embargo, esta experiencia me permitió
+      aprender más sobre el front-end, mejorando mis habilidades y ampliando mi
+      capacidad para gestionar proyectos completos.
     </p>
   </section>
 </Layout>

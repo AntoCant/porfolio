@@ -65,4 +65,23 @@ html.dark #darkToggle:hover .horizon {
     opacity: 1;
     transform: translate3d(0, 10, 0)
   }
+
+}
+
+@layer components {
+  .splide__pagination__page {
+    @apply bg-gray-300 border-none opacity-100;
+  }
+
+  .splide__pagination__page.is-active {
+    @apply bg-black;
+  }
+
+  .dark .splide__pagination__page {
+    @apply bg-gray-600;
+  }
+
+  .dark .splide__pagination__page.is-active {
+    @apply bg-white;
+  }
 }

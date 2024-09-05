@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Java",
+        "icon": "/assets/images/icons/java.png"
+    },
+    {
+        "name": "Springboot",
+        "icon": "/assets/images/icons/springboot.png"
+    },
+    {
+        "name": "Jenkins",
+        "icon": "/assets/images/icons/jenkins.png"
+    },
+    {
+        "name": "Gradle",
+        "icon": "/assets/images/icons/gradle.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "/assets/images/icons/postgres.png"
+    },
+    {
+        "name": "Swagger",
+        "icon": "/assets/images/icons/swagger.png"
+    },
+    {
+        "name": "Docker",
+        "icon": "/assets/images/icons/docker.png"
+    },
+    {
+        "name": "Jwt",
+        "icon": "/assets/images/icons/jwt.png"
+    },
+    {
+        "name": "Git",
+        "icon": "/assets/images/icons/git.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "/assets/images/icons/github.png"
+    },
+    {
+        "name": "S. Cloud",
+        "icon": "/assets/images/icons/cloud.png"
+    },
+    {
+        "name": "S. Security",
+        "icon": "/assets/images/icons/security.png"
+    },
+    {
+        "name": "Flayway",
+        "icon": "/assets/images/icons/flay.png"
+    },
+    {
+        "name": "MapStruct",
+        "icon": "/assets/images/icons/map.png"
+    },
+    {
+        "name": "junit 5 + M",
+        "icon": "/assets/images/icons/test.png"
+    }
+]

@@ -1,0 +1,35 @@
+---
+import privateSkills from "../collections/privateSkills.json";
+---
+
+<section class="relative z-20 max-w-4xl mx-auto my-12 px-7 lg:px-0">
+  <h2 class="text-2xl font-bold mb-4 text-black dark:text-white">
+    Principales Tecnologías Utilizadas
+  </h2>
+  <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+    Este proyecto integra diversas tecnologías para garantizar un desarrollo
+    ágil y eficiente. Utilizamos Java y Spring Boot en el backend, con Spring
+    Cloud para gestionar la comunicación y configuración de microservicios. La
+    seguridad está a cargo de Spring Security con JWT, y las bases de datos son
+    manejadas por PostgreSQL. Además, Docker y Jenkins nos permiten optimizar
+    los procesos de despliegue e integración continua
+  </p>
+  <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+    {
+      privateSkills.map((skill) => (
+        <li class="flex flex-col items-center justify-between text-center p-4 bg-transparent rounded-lg border border-dashed border-neutral-500 dark:border-neutral-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="flex items-center justify-center w-24 h-16 overflow-hidden rounded-lg">
+            <img
+              src={skill.icon}
+              alt={skill.name}
+              class="w-full h-auto object-contain"
+            />
+          </div>
+          <p class="mt-4 text-sm font-medium text-black dark:text-white">
+            {skill.name}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</section>
