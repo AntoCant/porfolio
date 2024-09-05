@@ -3,7 +3,7 @@ import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Layout from "../layouts/main.astro";
 import RedirecButon from "../components/redirecButon.astro";
-import Skills from "../components/skills.astro";
+import HardSkills from "../components/hardSkills.astro";
 import EmailDisplay from "../components/emailDisplay.astro";
 import Certificate from "../components/home/certificate.astro";
 ---
@@ -39,7 +39,6 @@ import Certificate from "../components/home/certificate.astro";
         <ul
           class="py-2 space-y-2 text-sm text-neutral-700 dark:text-neutral-300 list-none"
         >
-          <!-- Lenguajes -->
           <li class="flex items-center">
             <svg
               class="w-4 h-4 text-blue-500 mr-2"
@@ -52,8 +51,6 @@ import Certificate from "../components/home/certificate.astro";
             </svg>
             <span>Lenguajes: <strong>Java, SQL</strong></span>
           </li>
-
-          <!-- Frameworks -->
           <li class="flex items-center">
             <svg
               class="w-4 h-4 text-green-500 mr-2"
@@ -66,8 +63,6 @@ import Certificate from "../components/home/certificate.astro";
             </svg>
             <span>Frameworks: <strong>Spring Boot, Spring Cloud</strong></span>
           </li>
-
-          <!-- Seguridad -->
           <li class="flex items-center">
             <svg
               class="w-4 h-4 text-red-500 mr-2"
@@ -80,8 +75,6 @@ import Certificate from "../components/home/certificate.astro";
             </svg>
             <span>Seguridad: <strong>Spring Security, JWT</strong></span>
           </li>
-
-          <!-- Bases de Datos -->
           <li class="flex items-center">
             <svg
               class="w-4 h-4 text-yellow-500 mr-2"
@@ -94,8 +87,6 @@ import Certificate from "../components/home/certificate.astro";
             </svg>
             <span>Bases de Datos: <strong>PostgreSQL, MySQL</strong></span>
           </li>
-
-          <!-- Herramientas DevOps -->
           <li class="flex items-center">
             <svg
               class="w-4 h-4 text-purple-500 mr-2"
@@ -108,8 +99,6 @@ import Certificate from "../components/home/certificate.astro";
             </svg>
             <span>Herramientas DevOps: <strong>Docker</strong></span>
           </li>
-
-          <!-- Version Control -->
           <li class="flex items-center">
             <svg
               class="w-4 h-4 text-orange-500 mr-2"
@@ -122,8 +111,6 @@ import Certificate from "../components/home/certificate.astro";
             </svg>
             <span>Version Control: <strong>Git, GitHub</strong></span>
           </li>
-
-          <!-- Documentación -->
           <li class="flex items-center">
             <svg
               class="w-4 h-4 text-teal-500 mr-2"
@@ -136,8 +123,6 @@ import Certificate from "../components/home/certificate.astro";
             </svg>
             <span>Documentación: <strong>Swagger, Postman</strong></span>
           </li>
-
-          <!-- Prácticas de desarrollo -->
           <li class="flex items-center">
             <svg
               class="w-4 h-4 text-pink-500 mr-2"
@@ -234,7 +219,7 @@ import Certificate from "../components/home/certificate.astro";
   </div>
 
   <Separator text="Mis Hard Skills" />
-  <Skills />
+  <HardSkills />
   <Separator text="Mis proyectos" />
   <Projects />
   <Separator text="Mis Certificados" />

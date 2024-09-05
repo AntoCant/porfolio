@@ -1,18 +1,22 @@
 [
     {
-        "title": "Personalización de una plantilla Astro.",
-        "description": "Administración completa de estudiantes, desde el registro hasta el seguimiento de su progreso."
+        "title": "Personalización de Plantilla en Astro",
+        "description": "Aunque mi fuerte es el backend, me sumergí en el mundo del front-end y trabajé con una plantilla de Astro. Realicé múltiples modificaciones, añadiendo componentes como carruseles, secciones totalmente nuevas y creando nuevas páginas desde cero."
     },
     {
-        "title": "Creación de secciones y componentes personalizados.",
-        "description": "Permite la carga, almacenamiento y compartición segura de documentos."
+        "title": "Diseños Personalizados",
+        "description": "Diseñé miniaturas, logos e imágenes únicas para darle un estilo propio a la página. Este trabajo visual fue un desafío personal, ya que no soy diseñador, pero fue fundamental para mostrar una identidad visual sólida."
     },
     {
-        "title": "Despliegue en VPS personal usando Docker.",
-        "description": "Sistema de notificaciones automatizadas para mantener a los estudiantes informados."
+        "title": "Despliegue en VPS Personal Usando Docker",
+        "description": "ras el desarrollo, empaqueté el proyecto en Docker y lo desplegué en mi propio servidor VPS, garantizando que la web funcionara de manera óptima."
     },
     {
-        "title": "Optimización de tráfico con Nginx.",
-        "description": "Implementación de OAuth2 para una autenticación robusta."
+        "title": "Optimización de Tráfico con Nginx",
+        "description": "Implementé Nginx en mi VPS para gestionar el tráfico y asegurar que el sitio fuese seguro y rápido, utilizando certificados SSL que adquirí para darle un nivel profesional al proyecto."
+    },
+    {
+        "title": "Agradecimientos",
+        "description": "Agradecimientos"
     }
 ]

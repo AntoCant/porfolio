@@ -1,11 +1,15 @@
 ---
 import Layout from "../../layouts/main.astro";
-import FeatureList from "../../components/FeatureList.astro";
+import FeatureList from "../../components/featureList.astro";
 import features from "../../collections/features.json";
+import Separator from "../../components/home/separator.astro";
+import PrivateSkills from "../../components/PrivateSkills.astro";
+import Carousel from "../../components/carousel.astro";
 
-const projectTitle = "Gestión de Estudiantes - Proyecto Privado";
+const projectTitle =
+  " Aplicación Móvil para Gestión de Estudiantes y Cursos (Proyecto Privado)";
 const projectDescription =
-  "Este proyecto se centró en la creación de una plataforma de gestión de estudiantes para una academia, con características avanzadas de manejo de contenido y notificaciones.";
+  " Este proyecto tiene como objetivo facilitar la gestión de estudiantes, cursos, contenido y notificaciones en una academia de programación, utilizando una arquitectura basada en microservicios.";
 ---
 
 <Layout title={projectTitle}>
@@ -18,7 +22,9 @@ const projectDescription =
     <p class="mt-8 text-base text-neutral-600 dark:text-neutral-400">
       {projectDescription}
     </p>
-
+    <Separator text="Galeria de Imágenes" />
+    <Carousel />    
+    <Separator text="Principales Características" />
     <h2
       class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
     >
@@ -30,13 +36,17 @@ const projectDescription =
     <h2
       class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
     >
-      Desafíos y Soluciones
+    Actualización del Equipo
     </h2>
     <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      En este proyecto, uno de los mayores desafíos fue la integración de
-      servicios externos, solucionado con la implementación de APIs RESTful que
-      garantizan la interoperabilidad.
+      Recientemente, el equipo se ha expandido con un desarrollador adicional
+      para backend y dos nuevos miembros en frontend, lo que ha permitido un
+      avance más rápido en la implementación de nuevas funcionalidades.
     </p>
+
+    <Separator text="Tecnologías Utilizadas" />
+
+    <PrivateSkills />
 
     <h2
       class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"

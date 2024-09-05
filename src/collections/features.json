@@ -1,22 +1,38 @@
 [
   {
-    "title": "Gestión de Estudiantes",
-    "description": "Administración completa de estudiantes, desde el registro hasta el seguimiento de su progreso."
+    "title": "Gestión de Usuarios y Autenticación",
+    "description": "La aplicación permite el registro y autenticación de usuarios, brindando acceso seguro a los contenidos de cada curso. Utiliza Spring Security y JWT para garantizar una autenticación robusta, junto a OAuth2 para manejar los permisos de acceso."
   },
   {
-    "title": "Manejo de Documentos",
-    "description": "Permite la carga, almacenamiento y compartición segura de documentos."
+    "title": "Manejo de Contenido Educativo",
+    "description": "Los instructores pueden subir materiales de estudio, incluidos videos, documentos y evaluaciones. Los alumnos tienen acceso a estos recursos de acuerdo al curso que están cursando, permitiendo una gestión separada por cursos y profesores."
   },
   {
-    "title": "Notificaciones",
-    "description": "Sistema de notificaciones automatizadas para mantener a los estudiantes informados."
+    "title": "Notificaciones Automatizadas",
+    "description": "El sistema envía notificaciones tanto por correo electrónico (integrado con Spring Boot Starter Mail) como por notificaciones internas dentro de la aplicación, manteniendo a los estudiantes y profesores informados en tiempo real."
   },
   {
-    "title": "Autenticación Segura",
-    "description": "Implementación de OAuth2 para una autenticación robusta."
+    "title": "Arquitectura de Microservicios",
+    "description": "El sistema está basado en una arquitectura de microservicios, utilizando Spring Cloud para facilitar la comunicación entre los diferentes servicios. Se emplean patrones como Eureka Server, Auth Server, Config Server y API Gateway para la gestión de servicios distribuidos."
   },
   {
-    "title": "Microservicios Escalables",
-    "description": "Arquitectura basada en microservicios que asegura la escalabilidad."
+    "title": "Comunicación entre Microservicios",
+    "description": "Se implementa Feign como cliente HTTP para facilitar la comunicación entre ciertos microservicios, optimizando la interacción interna del sistema."
+  },
+  {
+    "title": "CI/CD con Jenkins y Docker",
+    "description": "El sistema está integrado con Jenkins para la automatización de despliegues y utiliza Docker para gestionar los entornos de desarrollo y producción de manera eficiente."
+  },
+  {
+    "title": "Tecnologías Utilizadas",
+    "description": "El backend está desarrollado en Java con Spring Boot, utilizando Gradle como gestor de dependencias y PostgreSQL como base de datos principal."
+  },
+  {
+    "title": "Colaboración en Equipo",
+    "description": "El equipo de desarrollo está compuesto por 4 personas: 2 en backend y 2 en frontend. Trabajan de manera colaborativa, con reuniones periódicas para definir nuevas funcionalidades, discutir los contratos de los servicios y asegurar la calidad del código."
+  },
+  {
+    "title": "Frontend en Kotlin",
+    "description": "El frontend de la aplicación está desarrollado en Kotlin utilizando Jetpack Compose, lo que permite una experiencia de usuario moderna y optimizada para dispositivos móviles."
   }
 ]
