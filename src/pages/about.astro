@@ -10,27 +10,47 @@ import education from "../collections/education.json";
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
       title="Sobre mi"
-      description="Te muestro un pequeño vistazo a mi historia y las motivaciones que me llevan a mejorar constantemente como desarrollador."
+      description="Te doy una mirada rápida a mi recorrido como desarrollador y las motivaciones que me impulsan a seguir mejorando cada día en el campo del desarrollo Back-End."
     />
 
-    <img src="/assets/images/aboutPersonal.png" class="relative z-30 w-full my-10 rounded-xl" />
+    <img
+      src="/assets/images/aboutPersonal.png"
+      class="relative z-30 w-full my-10 rounded-xl"
+    />
 
-    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Biografia corta</h2>
-<p
-  class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mb-4"
->
-  Estoy especializado en Java y Spring Boot, apasionado por transformar ideas en soluciones tecnológicas eficientes y escalables. He tenido el privilegio de trabajar en proyectos desafiantes, desde microservicios para aplicaciones móviles hasta plataformas de e-commerce, lo que me ha permitido no solo perfeccionar mis habilidades, sino también adaptarme rápidamente a nuevas tecnologías y metodologías.
-</p>
-<p
-  class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
->
-  A lo largo de mi carrera, he dominado herramientas clave como Docker, PostgreSQL y Spring Cloud, asegurando que cada proyecto en el que participo sea robusto y esté preparado para evolucionar con las necesidades del mercado. Mi compromiso con la mejora continua me impulsa a estar siempre un paso adelante, adoptando las últimas tendencias y buscando la excelencia en cada línea de código. Estoy listo para aportar mi experiencia y energía a equipos que valoran la innovación y la eficiencia.
-</p>
-
-    
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">
+      Biografia corta
+    </h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mb-4"
+    >
+      Soy desarrollador especializado en Java y Spring Boot, siempre buscando
+      transformar ideas en soluciones tecnológicas eficientes y escalables. A lo
+      largo de mi trayectoria, he trabajado en una variedad de proyectos, desde
+      la creación de microservicios para aplicaciones móviles hasta plataformas
+      completas de e-commerce, lo que me ha permitido perfeccionar tanto mis
+      habilidades técnicas como mi capacidad de adaptación a nuevas tecnologías.
+    </p>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      Mi pasión por la mejora continua me ha llevado a dominar herramientas
+      clave como Docker, PostgreSQL, Spring Cloud y Spring Security,
+      garantizando que cada proyecto en el que trabajo sea robusto, escalable y
+      preparado para el futuro. Siempre estoy un paso adelante, adoptando las
+      últimas tendencias y aplicando los principios de clean code para asegurar
+      que cada línea de código sea de alta calidad.
+    </p>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mt-4"
+    >
+      Estoy listo para aportar mis conocimientos y energía a equipos que valoren
+      la innovación y la eficiencia, trabajando en conjunto para crear
+      soluciones que realmente marquen la diferencia.
+    </p>
 
     <h2
-      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200 mt-8"
     >
       Experiencia Profesional
     </h2>
@@ -47,6 +67,7 @@ import education from "../collections/education.json";
                     company={experience.company}
                     description={experience.description}
                     logo={experience.logo}
+                    tasks={experience.tasks}
                   />
                 </div>
               ) : (
@@ -56,26 +77,36 @@ import education from "../collections/education.json";
                   company={experience.company}
                   description={experience.description}
                   logo={experience.logo}
+                  tasks={experience.tasks}
                 />
               )}
             </>
-          )
+          );
         })
       }
     </div>
 
     <h2
-    class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
-  >
-    Educación
-  </h2>
-  <div class="px-5 py-10">
-    {
-      education.map((education, loop) => {
-        return (
-          <>
-            {loop == 0 || loop == 1 ? (
-              <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Educación
+    </h2>
+    <div class="px-5 py-10">
+      {
+        education.map((education, loop) => {
+          return (
+            <>
+              {loop == 0 || loop == 1 ? (
+                <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                  <AboutExperience
+                    dates={education.dates}
+                    role={education.title}
+                    company={education.institution}
+                    description={education.description}
+                    logo={education.logo}
+                  />
+                </div>
+              ) : (
                 <AboutExperience
                   dates={education.dates}
                   role={education.title}
@@ -83,33 +114,11 @@ import education from "../collections/education.json";
                   description={education.description}
                   logo={education.logo}
                 />
-              </div>
-            ) : (
-              <AboutExperience
-                dates={education.dates}
-                role={education.title}
-                company={education.institution}
-                description={education.description}
-                logo={education.logo}
-              />
-            )}
-          </>
-        )
-      })
-    }
-  </div>
-
-    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Let's Connect</h2>
-    <p
-      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
-    >
-      If you want to stay up to date with my work be sure to <a
-        href="https://twitter.com/ccikai"
-        target="_blank"
-        class="text-indigo-600 underline">follow me on twitter</a
-      >, or you can send me an <a href="mailto:astro-aria#miantiao.me" class="text-indigo-600 underline"
-        >email</a
-      > and I'll be sure to get back to you.
-    </p>
+              )}
+            </>
+          );
+        })
+      }
+    </div>
   </section>
 </Layout>

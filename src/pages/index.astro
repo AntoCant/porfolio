@@ -2,7 +2,7 @@
 import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Layout from "../layouts/main.astro";
-import CvButon from "../components/cvButon.astro";
+import RedirecButon from "../components/redirecButon.astro";
 import Skills from "../components/skills.astro";
 import EmailDisplay from "../components/emailDisplay.astro";
 import Certificate from "../components/home/certificate.astro";
@@ -17,32 +17,146 @@ import Certificate from "../components/home/certificate.astro";
         <h1
           class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
         >
-          Hola, Soy Anto.
+          Hola
+        </h1>
+        <h1
+          class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
+        >
+          Soy Antonio.
         </h1>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          Desarrollador Back-End especializado en Java y Spring Boot, con una pasión por crear soluciones que realmente marcan la diferencia. A lo largo de mi carrera, he implementado arquitecturas de microservicios y sistemas de seguridad robustos con Spring Security y JWT, lo que me ha permitido mejorar la eficiencia y seguridad de proyectos complejos. <br
+          Soy un desarrollador Back-End que disfruta transformar desafíos en
+          soluciones reales. No se trata solo de escribir código, sino de crear
+          sistemas que puedan crecer y adaptarse en el tiempo. <br
             class="hidden lg:block"
-          />Me gusta trabajar con metodologías ágiles y aplicar principios de clean code para asegurar que cada proyecto sea escalable, eficiente y de alta calidad.
+          />Al final del día, lo que más me motiva es ver cómo una idea se
+          convierte en algo real y funcional, con cada línea de código
+          cumpliendo su propósito.
         </p>
         <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
           Mis habilidades principales son:
         </p>
         <ul
-          class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
+          class="py-2 space-y-2 text-sm text-neutral-700 dark:text-neutral-300 list-none"
         >
-          <li>Java</li>
-          <li>Springboot</li>
-          <li>Spring Cloud</li>
-          <li>Seguridad con Spring Security y JWT</li>
-          <li>Arquitectura de Microservicios</li>
-          <li>PostgreSQL</li>
-          <li>Docker</li>
-          <li>Maven y Gradle</li>
-          <li>Git y GitHub</li> 
+          <!-- Lenguajes -->
+          <li class="flex items-center">
+            <svg
+              class="w-4 h-4 text-blue-500 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.406 3.438 9.938 8.202 11.493.6.112.82-.264.82-.586 0-.29-.01-1.056-.015-2.073-3.338.726-4.042-1.609-4.042-1.609-.545-1.385-1.333-1.753-1.333-1.753-1.089-.745.082-.73.082-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.805 1.303 3.492.997.109-.775.419-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.382 1.236-3.221-.124-.303-.535-1.525.117-3.177 0 0 1.007-.322 3.3 1.231a11.525 11.525 0 0 1 6 0c2.292-1.553 3.297-1.231 3.297-1.231.653 1.653.242 2.875.118 3.177.77.839 1.236 1.911 1.236 3.221 0 4.61-2.806 5.624-5.477 5.921.431.371.814 1.1.814 2.215 0 1.6-.014 2.892-.014 3.285 0 .325.217.704.826.585C20.565 21.937 24 17.405 24 12c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            <span>Lenguajes: <strong>Java, SQL</strong></span>
+          </li>
+
+          <!-- Frameworks -->
+          <li class="flex items-center">
+            <svg
+              class="w-4 h-4 text-green-500 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.406 3.438 9.938 8.202 11.493.6.112.82-.264.82-.586 0-.29-.01-1.056-.015-2.073-3.338.726-4.042-1.609-4.042-1.609-.545-1.385-1.333-1.753-1.333-1.753-1.089-.745.082-.73.082-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.805 1.303 3.492.997.109-.775.419-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.382 1.236-3.221-.124-.303-.535-1.525.117-3.177 0 0 1.007-.322 3.3 1.231a11.525 11.525 0 0 1 6 0c2.292-1.553 3.297-1.231 3.297-1.231.653 1.653.242 2.875.118 3.177.77.839 1.236 1.911 1.236 3.221 0 4.61-2.806 5.624-5.477 5.921.431.371.814 1.1.814 2.215 0 1.6-.014 2.892-.014 3.285 0 .325.217.704.826.585C20.565 21.937 24 17.405 24 12c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            <span>Frameworks: <strong>Spring Boot, Spring Cloud</strong></span>
+          </li>
+
+          <!-- Seguridad -->
+          <li class="flex items-center">
+            <svg
+              class="w-4 h-4 text-red-500 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.406 3.438 9.938 8.202 11.493.6.112.82-.264.82-.586 0-.29-.01-1.056-.015-2.073-3.338.726-4.042-1.609-4.042-1.609-.545-1.385-1.333-1.753-1.333-1.753-1.089-.745.082-.73.082-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.805 1.303 3.492.997.109-.775.419-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.382 1.236-3.221-.124-.303-.535-1.525.117-3.177 0 0 1.007-.322 3.3 1.231a11.525 11.525 0 0 1 6 0c2.292-1.553 3.297-1.231 3.297-1.231.653 1.653.242 2.875.118 3.177.77.839 1.236 1.911 1.236 3.221 0 4.61-2.806 5.624-5.477 5.921.431.371.814 1.1.814 2.215 0 1.6-.014 2.892-.014 3.285 0 .325.217.704.826.585C20.565 21.937 24 17.405 24 12c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            <span>Seguridad: <strong>Spring Security, JWT</strong></span>
+          </li>
+
+          <!-- Bases de Datos -->
+          <li class="flex items-center">
+            <svg
+              class="w-4 h-4 text-yellow-500 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.406 3.438 9.938 8.202 11.493.6.112.82-.264.82-.586 0-.29-.01-1.056-.015-2.073-3.338.726-4.042-1.609-4.042-1.609-.545-1.385-1.333-1.753-1.333-1.753-1.089-.745.082-.73.082-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.805 1.303 3.492.997.109-.775.419-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.382 1.236-3.221-.124-.303-.535-1.525.117-3.177 0 0 1.007-.322 3.3 1.231a11.525 11.525 0 0 1 6 0c2.292-1.553 3.297-1.231 3.297-1.231.653 1.653.242 2.875.118 3.177.77.839 1.236 1.911 1.236 3.221 0 4.61-2.806 5.624-5.477 5.921.431.371.814 1.1.814 2.215 0 1.6-.014 2.892-.014 3.285 0 .325.217.704.826.585C20.565 21.937 24 17.405 24 12c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            <span>Bases de Datos: <strong>PostgreSQL, MySQL</strong></span>
+          </li>
+
+          <!-- Herramientas DevOps -->
+          <li class="flex items-center">
+            <svg
+              class="w-4 h-4 text-purple-500 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.406 3.438 9.938 8.202 11.493.6.112.82-.264.82-.586 0-.29-.01-1.056-.015-2.073-3.338.726-4.042-1.609-4.042-1.609-.545-1.385-1.333-1.753-1.333-1.753-1.089-.745.082-.73.082-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.805 1.303 3.492.997.109-.775.419-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.382 1.236-3.221-.124-.303-.535-1.525.117-3.177 0 0 1.007-.322 3.3 1.231a11.525 11.525 0 0 1 6 0c2.292-1.553 3.297-1.231 3.297-1.231.653 1.653.242 2.875.118 3.177.77.839 1.236 1.911 1.236 3.221 0 4.61-2.806 5.624-5.477 5.921.431.371.814 1.1.814 2.215 0 1.6-.014 2.892-.014 3.285 0 .325.217.704.826.585C20.565 21.937 24 17.405 24 12c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            <span>Herramientas DevOps: <strong>Docker</strong></span>
+          </li>
+
+          <!-- Version Control -->
+          <li class="flex items-center">
+            <svg
+              class="w-4 h-4 text-orange-500 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.406 3.438 9.938 8.202 11.493.6.112.82-.264.82-.586 0-.29-.01-1.056-.015-2.073-3.338.726-4.042-1.609-4.042-1.609-.545-1.385-1.333-1.753-1.333-1.753-1.089-.745.082-.73.082-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.805 1.303 3.492.997.109-.775.419-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.382 1.236-3.221-.124-.303-.535-1.525.117-3.177 0 0 1.007-.322 3.3 1.231a11.525 11.525 0 0 1 6 0c2.292-1.553 3.297-1.231 3.297-1.231.653 1.653.242 2.875.118 3.177.77.839 1.236 1.911 1.236 3.221 0 4.61-2.806 5.624-5.477 5.921.431.371.814 1.1.814 2.215 0 1.6-.014 2.892-.014 3.285 0 .325.217.704.826.585C20.565 21.937 24 17.405 24 12c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            <span>Version Control: <strong>Git, GitHub</strong></span>
+          </li>
+
+          <!-- Documentación -->
+          <li class="flex items-center">
+            <svg
+              class="w-4 h-4 text-teal-500 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.406 3.438 9.938 8.202 11.493.6.112.82-.264.82-.586 0-.29-.01-1.056-.015-2.073-3.338.726-4.042-1.609-4.042-1.609-.545-1.385-1.333-1.753-1.333-1.753-1.089-.745.082-.73.082-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.805 1.303 3.492.997.109-.775.419-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.382 1.236-3.221-.124-.303-.535-1.525.117-3.177 0 0 1.007-.322 3.3 1.231a11.525 11.525 0 0 1 6 0c2.292-1.553 3.297-1.231 3.297-1.231.653 1.653.242 2.875.118 3.177.77.839 1.236 1.911 1.236 3.221 0 4.61-2.806 5.624-5.477 5.921.431.371.814 1.1.814 2.215 0 1.6-.014 2.892-.014 3.285 0 .325.217.704.826.585C20.565 21.937 24 17.405 24 12c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            <span>Documentación: <strong>Swagger, Postman</strong></span>
+          </li>
+
+          <!-- Prácticas de desarrollo -->
+          <li class="flex items-center">
+            <svg
+              class="w-4 h-4 text-pink-500 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.406 3.438 9.938 8.202 11.493.6.112.82-.264.82-.586 0-.29-.01-1.056-.015-2.073-3.338.726-4.042-1.609-4.042-1.609-.545-1.385-1.333-1.753-1.333-1.753-1.089-.745.082-.73.082-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.805 1.303 3.492.997.109-.775.419-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.382 1.236-3.221-.124-.303-.535-1.525.117-3.177 0 0 1.007-.322 3.3 1.231a11.525 11.525 0 0 1 6 0c2.292-1.553 3.297-1.231 3.297-1.231.653 1.653.242 2.875.118 3.177.77.839 1.236 1.911 1.236 3.221 0 4.61-2.806 5.624-5.477 5.921.431.371.814 1.1.814 2.215 0 1.6-.014 2.892-.014 3.285 0 .325.217.704.826.585C20.565 21.937 24 17.405 24 12c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+            <span
+              >Prácticas de desarrollo: <strong>SOLID, Clean Code, TDD</strong
+              ></span
+            >
+          </li>
         </ul>
-        <CvButon text="Mi CV" link="/Antonio Canteros.pdf" />
-        
-        <!-- Nuevo div contenedor para los íconos -->
+        <RedirecButon text="Mi CV" link="/Antonio Canteros.pdf" />
+        <RedirecButon text="Mis Proyectos" link="/projects" />
+
         <div class="flex space-x-4 mt-11 items-center">
           <a
             href="https://www.linkedin.com/in/antonio-canteros/"
@@ -59,10 +173,10 @@ import Certificate from "../components/home/certificate.astro";
             >
               <path
                 d="M20.447 20.452H16.88v-5.568c0-1.328-.027-3.036-1.849-3.036-1.85 0-2.133 1.444-2.133 2.937v5.667h-3.568V9h3.422v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.603 0 4.267 2.368 4.267 5.452v6.728zM5.337 7.433a2.073 2.073 0 110-4.146 2.073 2.073 0 010 4.146zm1.784 13.019H3.554V9h3.567v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-              />
+              ></path>
             </svg>
           </a>
-        
+
           <a
             href="https://github.com/AntoCant"
             target="_blank"
@@ -79,14 +193,11 @@ import Certificate from "../components/home/certificate.astro";
               <path
                 fill-rule="evenodd"
                 d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                clip-rule="evenodd"
-              ></path>
+                clip-rule="evenodd"></path>
             </svg>
           </a>
         </div>
-        
-        <!-- Fin del nuevo div contenedor -->
-        
+
         <EmailDisplay email="antonio.canteros.alberto@gmail.com" />
       </div>
       <div
@@ -129,6 +240,3 @@ import Certificate from "../components/home/certificate.astro";
   <Separator text="Mis Certificados" />
   <Certificate />
 </Layout>
-
-
-

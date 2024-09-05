@@ -1,23 +1,22 @@
 [
-    {
-      "title": "Gestión de Estudiantes",
-      "description": "Administración completa de estudiantes, desde el registro hasta el seguimiento de su progreso."
-    },
-    {
-      "title": "Manejo de Documentos",
-      "description": "Permite la carga, almacenamiento y compartición segura de documentos."
-    },
-    {
-      "title": "Notificaciones",
-      "description": "Sistema de notificaciones automatizadas para mantener a los estudiantes informados."
-    },
-    {
-      "title": "Autenticación Segura",
-      "description": "Implementación de OAuth2 para una autenticación robusta."
-    },
-    {
-      "title": "Microservicios Escalables",
-      "description": "Arquitectura basada en microservicios que asegura la escalabilidad."
-    }
-  ]
-  
+  {
+    "title": "Gestión de Estudiantes",
+    "description": "Administración completa de estudiantes, desde el registro hasta el seguimiento de su progreso."
+  },
+  {
+    "title": "Manejo de Documentos",
+    "description": "Permite la carga, almacenamiento y compartición segura de documentos."
+  },
+  {
+    "title": "Notificaciones",
+    "description": "Sistema de notificaciones automatizadas para mantener a los estudiantes informados."
+  },
+  {
+    "title": "Autenticación Segura",
+    "description": "Implementación de OAuth2 para una autenticación robusta."
+  },
+  {
+    "title": "Microservicios Escalables",
+    "description": "Arquitectura basada en microservicios que asegura la escalabilidad."
+  }
+]
