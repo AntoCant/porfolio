@@ -3,17 +3,15 @@ import projectsV from "../collections/projectsV.json";
 import PageHeading from "../components/page-heading.astro";
 import ProjectV from "../components/projectV.astro";
 import Layout from "../layouts/main.astro";
-
 ---
 
 <Layout title="My Projects">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
       title="Explora Mis Proyectos"
-      description="Aquí te presento una selección de mis proyectos más relevantes, donde aplico y perfecciono mis habilidades en desarrollo Back-End. Siempre estoy creando y trabajando en nuevas cosas, así que te invito a regresar para descubrir las novedades y ver en qué estoy trabajando."
+      description="Aquí te presento una selección de mis proyectos más relevantes, donde aplico y perfecciono mis habilidades en desarrollo Back-End. Estos proyectos me han permitido resolver desafíos técnicos complejos, mejorar la eficiencia de los sistemas y seguir aprendiendo nuevas tecnologías. Te invito a explorar cada uno de ellos para descubrir cómo hago que las ideas cobren vida."
     />
 
-    
     <div class="z-50 flex flex-col space-y-7 mt-20">
       {
         projectsV.map((projectV) => {
@@ -24,12 +22,11 @@ import Layout from "../layouts/main.astro";
               description2={projectV.description2}
               image={projectV.image}
               url={projectV.url}
+              cta={projectV.cta}
             />
-  
-          )
+          );
         })
       }
     </div>
   </section>
-  
 </Layout>

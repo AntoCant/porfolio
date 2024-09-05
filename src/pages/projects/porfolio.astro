@@ -1,18 +1,18 @@
 ---
-
 import Layout from "../../layouts/main.astro";
 import FeatureListPorfolio from "../../components/featureListPorfolio.astro";
 import features from "../../collections/featuresPorfolio.json";
 
 const projectTitle = "Mi Portafolio";
-const projectDescription = "Este portafolio fue desarrollado para mostrar mis proyectos y habilidades en desarrollo Back-End, utilizando una plantilla de Astro personalizada y desplegado en mi VPS personal con Docker y Nginx.";
-
+const projectDescription =
+  "Este portafolio fue desarrollado para mostrar mis proyectos y habilidades en desarrollo Back-End, utilizando una plantilla de Astro personalizada y desplegado en mi VPS personal con Docker y Nginx.";
 ---
 
 <Layout title={projectTitle}>
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
-    
-    <h1 class="text-4xl font-bold leading-tight text-neutral-900 dark:text-neutral-100">
+    <h1
+      class="text-4xl font-bold leading-tight text-neutral-900 dark:text-neutral-100"
+    >
       {projectTitle}
     </h1>
 
@@ -20,33 +20,49 @@ const projectDescription = "Este portafolio fue desarrollado para mostrar mis pr
       {projectDescription}
     </p>
 
-    <h2 class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200">
+    <h2
+      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
+    >
       Principales Características
     </h2>
 
     <FeatureListPorfolio items={features} />
 
-    <h2 class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200">
+    <h2
+      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
+    >
       Desafíos y Soluciones
     </h2>
     <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      El principal desafío fue la integración de nuevas secciones personalizadas en una plantilla existente, especialmente al añadir funcionalidad adicional para proyectos y componentes únicos. Para superar este reto, aproveché la flexibilidad de Astro para crear componentes reutilizables y usé Docker para asegurar que el entorno de desarrollo fuera coherente con el de producción.
+      El principal desafío fue la integración de nuevas secciones personalizadas
+      en una plantilla existente, especialmente al añadir funcionalidad
+      adicional para proyectos y componentes únicos. Para superar este reto,
+      aproveché la flexibilidad de Astro para crear componentes reutilizables y
+      usé Docker para asegurar que el entorno de desarrollo fuera coherente con
+      el de producción.
     </p>
 
-    <h2 class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200">
+    <h2
+      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
+    >
       Impacto o Resultados
     </h2>
     <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      El portafolio ha mejorado significativamente la forma en que presento mis proyectos y habilidades. Me permite mantener una presencia profesional en línea, mostrando mis capacidades técnicas y organizando mi trabajo de forma clara y visual. Además, el despliegue en mi propio VPS demuestra mi experiencia en la gestión de infraestructura y despliegue de proyectos.
+      El portafolio ha mejorado significativamente la forma en que presento mis
+      proyectos y habilidades. Me permite mantener una presencia profesional en
+      línea, mostrando mis capacidades técnicas y organizando mi trabajo de
+      forma clara y visual. Además, el despliegue en mi propio VPS demuestra mi
+      experiencia en la gestión de infraestructura y despliegue de proyectos.
     </p>
 
-    <h2 class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200">
+    <h2
+      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
+    >
       Galería de Imágenes
     </h2>
     <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      A continuación, se muestran capturas de pantalla del portafolio en diferentes dispositivos y vistas clave.
+      A continuación, se muestran capturas de pantalla del portafolio en
+      diferentes dispositivos y vistas clave.
     </p>
-    
-    
   </section>
 </Layout>

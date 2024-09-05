@@ -1,31 +1,34 @@
 [
-    {
+	{
 		"name": "Aplicación Movil",
-		"description": "Implementacion de gestión de estudiantes y cursos, implementado con Java y Spring Boot.",
-        "description2": "Trabajo en el desarrollo de una plataforma de gestión de cursos para una academia, enfocada en optimizar la experiencia de los estudiantes y facilitar la administración de contenidos por parte de los instructores. Mi rol incluyó la implementación de microservicios con Spring Boot, la integración de seguridad mediante Spring Security, y la gestión de datos con PostgreSQL. Este proyecto me permitió fortalecer mis habilidades en arquitectura de software y colaboración en equipo, y contribuyó a mejorar significativamente la eficiencia operativa de la academia.",
+		"description": "Proyecto Independiente",	
+		"description2": "Estoy trabajando en una plataforma para gestionar estudiantes y cursos, diseñada para facilitar la administración de contenido y evaluaciones de manera eficiente. Utilizando microservicios con Java, Spring Boot y PostgreSQL para la gestión de datos, el proyecto garantiza escalabilidad y seguridad. Aunque ya hemos lanzado una primera versión, este proyecto sigue en desarrollo con nuevas funcionalidades en camino.",
 		"image": "/assets/images/projects/3.png",
-		"url": "/projects/project-private"
+		"url": "/projects/project-private",
+		"cta": "Ver Proyecto"
 	},
 	{
 		"name": "E-commerce 2.0",
 		"description": "Proyecto en constante evolución y expansión de funcionalidades.",
-        "description2" : "Desarrollo que explora una arquitectura de microservicios avanzada para un sistema de eCommerce. Con una integración continua de nuevas funcionalidades y mejoras, este proyecto utiliza Spring Cloud, Eureka, Config Server, y Auth Server para proporcionar un sistema más completo y seguro. Es una prueba de mi compromiso con la evolución continua y la excelencia técnica.",
+		"description2": "Este proyecto se enfoca en la creación de una arquitectura de microservicios avanzada para un sistema de eCommerce. Con una integración continua de nuevas funcionalidades y mejoras, este proyecto utiliza tecnologías como Spring Cloud, Eureka, Config Server y Auth Server para asegurar un sistema robusto, escalable y seguro. Es una prueba de mi compromiso con la evolución continua y la excelencia técnica.",
 		"image": "/assets/images/projects/1.png",
-		"url": "https://github.com/CantMagg-tech-works"
+		"url": "https://github.com/CantMagg-tech-works",
+		"cta": "Ver Proyecto"
 	},
 	{
 		"name": "E-commerce (Solucion Practica)",
 		"description": "Back-end diseñado para brindar una solución práctica y eficiente.",
-        "description2" : "Implementación de arquitectura básica de microservicios que soporta las funciones esenciales de un sistema de eCommerce. Es ideal para tiendas en línea que buscan una solución escalable y eficiente. Utiliza tecnologías como Java, Spring Boot, PostgreSQL, y Docker para garantizar un rendimiento sólido y una fácil expansión.",
+		"description2": "Este proyecto implementa una arquitectura básica de microservicios para un sistema de eCommerce, ideal para tiendas en línea que buscan una solución escalable y eficiente. Utilizando tecnologías como Java, Spring Boot, PostgreSQL y Docker, garantiza un rendimiento sólido y facilita la expansión.",
 		"image": "/assets/images/projects/2.png",
-		"url": "https://github.com/Team-6-R-L-Academy-Backend"
+		"url": "https://github.com/Team-6-R-L-Academy-Backend",
+		"cta": "Ver Proyecto"
 	},
 	{
 		"name": "Mi Porfolio Personal",
 		"description": "Explico un poco como fue la creación de este sitio.",
-		"description2": "Este portafolio está diseñado para mostrar mis proyectos y habilidades en desarrollo Back-End. Utilicé una plantilla de Astro que personalicé por completo, añadiendo secciones y componentes únicos. El portafolio está desplegado en mi VPS personal, donde también gestiono varios de mis microservicios utilizando Docker y Nginx para asegurar entornos eficientes y escalables.",
+		"description2": "Este portafolio fue diseñado para mostrar mis proyectos y habilidades en desarrollo Back-End. Partiendo de una plantilla de Astro, la personalicé por completo, añadiendo secciones y componentes únicos. El portafolio está desplegado en mi VPS personal, donde también gestiono varios de mis microservicios con Docker, asegurando entornos eficientes y escalables.",
 		"image": "/assets/images/projects/4.png",
-		"url": "/projects/porfolio"
+		"url": "/projects/porfolio",
+		"cta": "Ver Proyecto"
 	}
-	
 ]

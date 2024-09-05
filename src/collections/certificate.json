@@ -11,11 +11,10 @@
 		"image": "/assets/images/certificate/sql.png",
 		"url": "https://todocodeacademy.com/certificate/rdt/"
 	},
-    {
+	{
 		"name": "Git y GitHub",
 		"description": "Introduccion a Git y GitHub.",
 		"image": "/assets/images/certificate/git.png",
 		"url": "https://todocodeacademy.com/certificate/6oc/"
 	}
-	
 ]

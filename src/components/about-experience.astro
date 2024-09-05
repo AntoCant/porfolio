@@ -1,5 +1,5 @@
 ---
-const { logo, dates, role, company, description } = Astro.props;
+const { logo, dates, role, company, description, tasks } = Astro.props;
 ---
 
 <div class="relative flex flex-col justify-start pl-12">
@@ -9,14 +9,43 @@ const { logo, dates, role, company, description } = Astro.props;
     <img src={logo} alt={company} class="w-8 h-8" />
   </div>
 
+  <!-- Fechas -->
   <p
-    class="text-xs uppercase text-neutral-400 dark:text-neutral-500 trackign-widest"
+    class="text-xs uppercase text-neutral-400 dark:text-neutral-500 tracking-widest mt-1 mb-2"
   >
     {dates}
   </p>
-  <h3 class="my-1 text-lg font-bold dark:text-neutral-100">{role}</h3>
-  <p class="mb-1 text-sm font-medium dark:text-neutral-300">{company}</p>
-  <p class="text-sm font-light text-neutral-600 dark:text-neutral-400">
+
+  <!-- Rol -->
+  <h3 class="my-2 text-xl font-bold dark:text-neutral-100 text-neutral-900">
+    {role}
+  </h3>
+
+  <!-- Empresa -->
+  <p class="mb-2 text-sm font-medium text-neutral-700 dark:text-neutral-300">
+    {company}
+  </p>
+
+  <!-- Descripción -->
+  <p
+    class="mb-4 text-sm font-light text-neutral-600 dark:text-neutral-400 leading-relaxed"
+  >
     {description}
   </p>
+
+  <!-- Lista de tareas -->
+  {
+    tasks && (
+      <ul class="mt-4 list-disc list-inside text-neutral-700 dark:text-neutral-400 space-y-3 pl-5">
+        {tasks.map((task) => (
+          <li class="leading-relaxed">
+            <strong class="text-neutral-800 dark:text-neutral-200">
+              {task.title}:
+            </strong>{" "}
+            {task.description}
+          </li>
+        ))}
+      </ul>
+    )
+  }
 </div>

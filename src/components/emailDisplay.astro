@@ -3,54 +3,50 @@ const { email } = Astro.props;
 ---
 
 <div class="flex flex-col items-start">
-    <div class="flex items-center p-1 bg-transparent rounded-full border border-dashed border-neutral-600 text-neutral-300 mt-11" style="width: 280px;">
-      <input
-        id="email"
-        type="text"
-        value={email}
-        readonly
-        class="bg-transparent text-left pointer-events-none outline-none flex-grow pl-1.5 text-neutral-900 dark:text-white"
-      />
-    </div>
-    <div class="flex mt-4 space-x-4 justify-start">
-      <button
-        id="sendButton"
-        class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white hover:text-neutral-900 dark:hover:bg-black dark:hover:text-white"
-      >
-        Enviar Mail
-      </button>
-      <button
-        id="copyButton"
-        class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white hover:text-neutral-900 dark:hover:bg-black dark:hover:text-white"
-      >
-        Copiar
-      </button>
-    </div>
+  <div
+    class="flex items-center p-1 bg-transparent rounded-full border border-dashed border-neutral-600 text-neutral-300 mt-11"
+    style="width: 280px;"
+  >
+    <input
+      id="email"
+      type="text"
+      value={email}
+      readonly
+      class="bg-transparent text-left pointer-events-none outline-none flex-grow pl-1.5 text-neutral-900 dark:text-white"
+    />
+  </div>
+  <div class="flex mt-4 space-x-4 justify-start">
+    <button
+      id="sendButton"
+      class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white hover:text-neutral-900 dark:hover:bg-black dark:hover:text-white"
+    >
+      Enviar Mail
+    </button>
+    <button
+      id="copyButton"
+      class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white hover:text-neutral-900 dark:hover:bg-black dark:hover:text-white"
+    >
+      Copiar
+    </button>
+  </div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const emailElement = document.getElementById('email') as HTMLInputElement;
+  document.addEventListener("DOMContentLoaded", function () {
+    const emailElement = document.getElementById("email") as HTMLInputElement;
 
-    document.getElementById('sendButton').addEventListener('click', function () {
-      window.open('mailto:' + emailElement.value, '_blank');
-    });
-
-    document.getElementById('copyButton').addEventListener('click', function () {
-      navigator.clipboard.writeText(emailElement.value).then(function () {
-        alert('Correo copiado al portapapeles');
+    document
+      .getElementById("sendButton")
+      .addEventListener("click", function () {
+        window.open("mailto:" + emailElement.value, "_blank");
       });
-    });
+
+    document
+      .getElementById("copyButton")
+      .addEventListener("click", function () {
+        navigator.clipboard.writeText(emailElement.value).then(function () {
+          alert("Correo copiado al portapapeles");
+        });
+      });
   });
 </script>
-
-
-
-
-
-
-
-
-
-
-
