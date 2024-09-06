@@ -4,12 +4,16 @@ import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
 import education from "../collections/education.json";
+import ParagraphMenu from "../components/paragraphMenu.astro";
+import Separator from "../components/home/separator.astro";
+import RedirecButon from "../components/redirecButon.astro";
 ---
 
 <Layout title="About Me">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    
     <PageHeading
-      title="Sobre mi"
+      title="Sobre mí"
       description="Te doy una mirada rápida a mi recorrido como desarrollador y las motivaciones que me impulsan a seguir mejorando cada día en el campo del desarrollo Back-End."
     />
 
@@ -17,108 +21,46 @@ import education from "../collections/education.json";
       src="/assets/images/aboutPersonal.png"
       class="relative z-30 w-full my-10 rounded-xl"
     />
+    
+    <ParagraphMenu />
+    <Separator text="Experiencia"/>
 
-    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">
-      Biografia corta
-    </h2>
-    <p
-      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mb-4"
-    >
-      Soy desarrollador especializado en Java y Spring Boot, siempre buscando
-      transformar ideas en soluciones tecnológicas eficientes y escalables. A lo
-      largo de mi trayectoria, he trabajado en una variedad de proyectos, desde
-      la creación de microservicios para aplicaciones móviles hasta plataformas
-      completas de e-commerce, lo que me ha permitido perfeccionar tanto mis
-      habilidades técnicas como mi capacidad de adaptación a nuevas tecnologías.
-    </p>
-    <p
-      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
-    >
-      Mi pasión por la mejora continua me ha llevado a dominar herramientas
-      clave como Docker, PostgreSQL, Spring Cloud y Spring Security,
-      garantizando que cada proyecto en el que trabajo sea robusto, escalable y
-      preparado para el futuro. Siempre estoy un paso adelante, adoptando las
-      últimas tendencias y aplicando los principios de clean code para asegurar
-      que cada línea de código sea de alta calidad.
-    </p>
-    <p
-      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mt-4"
-    >
-      Estoy listo para aportar mis conocimientos y energía a equipos que valoren
-      la innovación y la eficiencia, trabajando en conjunto para crear
-      soluciones que realmente marquen la diferencia.
-    </p>
-
-    <h2
-      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200 mt-8"
-    >
-      Experiencia Profesional
-    </h2>
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Experiencia Profesional</h2>
     <div class="px-5 py-10">
-      {
-        experiences.map((experience, loop) => {
-          return (
-            <>
-              {loop == 0 || loop == 1 ? (
-                <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
-                  <AboutExperience
-                    dates={experience.dates}
-                    role={experience.role}
-                    company={experience.company}
-                    description={experience.description}
-                    logo={experience.logo}
-                    tasks={experience.tasks}
-                  />
-                </div>
-              ) : (
-                <AboutExperience
-                  dates={experience.dates}
-                  role={experience.role}
-                  company={experience.company}
-                  description={experience.description}
-                  logo={experience.logo}
-                  tasks={experience.tasks}
-                />
-              )}
-            </>
-          );
-        })
-      }
+      {experiences.map((experience, loop) => (
+        <div class={loop <= 1 ? "pb-10 border-l border-gray-200 dark:border-neutral-700" : ""}>
+          <AboutExperience
+            dates={experience.dates}
+            role={experience.role}
+            company={experience.company}
+            description={experience.description}
+            logo={experience.logo}
+            tasks={experience.tasks}
+          />
+        </div>
+      ))}
     </div>
 
-    <h2
-      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
-    >
-      Educación
-    </h2>
+    <RedirecButon text="VER MI CV" link="/Antonio Canteros.pdf" />
+
+    <Separator text="Estudios"/>
+
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Educación</h2>
     <div class="px-5 py-10">
-      {
-        education.map((education, loop) => {
-          return (
-            <>
-              {loop == 0 || loop == 1 ? (
-                <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
-                  <AboutExperience
-                    dates={education.dates}
-                    role={education.title}
-                    company={education.institution}
-                    description={education.description}
-                    logo={education.logo}
-                  />
-                </div>
-              ) : (
-                <AboutExperience
-                  dates={education.dates}
-                  role={education.title}
-                  company={education.institution}
-                  description={education.description}
-                  logo={education.logo}
-                />
-              )}
-            </>
-          );
-        })
-      }
+      {education.map((education, loop) => (
+        <div class={loop <= 1 ? "pb-10 border-l border-gray-200 dark:border-neutral-700" : ""}>
+          <AboutExperience
+            dates={education.dates}
+            role={education.title}
+            company={education.institution}
+            description={education.description}
+            logo={education.logo}
+          />
+        </div>
+      ))}
     </div>
+
+    <!-- Incluye el script de main.js -->
+    <script src="/src/assets/js/main.js"></script> <!-- Ruta correcta al main.js -->
   </section>
 </Layout>

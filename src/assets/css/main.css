@@ -85,3 +85,19 @@ html.dark #darkToggle:hover .horizon {
     @apply bg-white;
   }
 }
+
+/* Estilos para el botón activo en modo claro */
+.menu-item.active {
+  color: #000000; /* Negro en modo claro */
+  font-weight: bold;
+}
+
+/* Estilos para el botón activo en modo oscuro */
+.dark .menu-item.active {
+  color: #ffffff; /* Blanco en modo oscuro */
+  font-weight: bold;
+}
+
+
+
+
