@@ -1,0 +1,17 @@
+[
+  {
+    "id": "bio",
+    "title": "Biografía Corta",
+    "content": "Soy desarrollador especializado en Java y Spring Boot, siempre buscando transformar ideas en soluciones tecnológicas."
+  },
+  {
+    "id": "career",
+    "title": "Mi Carrera",
+    "content": "He trabajado en diversos proyectos a lo largo de mi carrera."
+  },
+  {
+    "id": "education",
+    "title": "Mi Educación",
+    "content": "Estudié informática en la Universidad, donde adquirí conocimientos fundamentales."
+  }
+]
