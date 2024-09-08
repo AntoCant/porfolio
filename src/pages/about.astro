@@ -3,9 +3,9 @@ import experiences from "../collections/experiences.json";
 import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
-import education from "../collections/education.json";
+import educations from "../collections/education.json";
 import ParagraphMenu from "../components/paragraphMenu.astro";
-import Separator from "../components/home/separator.astro";
+import SeparatorG from "../components/separatorGeneric.astro";
 import RedirecButon from "../components/redirecButon.astro";
 ---
 
@@ -23,42 +23,80 @@ import RedirecButon from "../components/redirecButon.astro";
     />
     
     <ParagraphMenu />
-    <Separator text="Experiencia"/>
+    <SeparatorG text="Experiencia"/>
 
     <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Experiencia Profesional</h2>
     <div class="px-5 py-10">
-      {experiences.map((experience, loop) => (
-        <div class={loop <= 1 ? "pb-10 border-l border-gray-200 dark:border-neutral-700" : ""}>
-          <AboutExperience
-            dates={experience.dates}
-            role={experience.role}
-            company={experience.company}
-            description={experience.description}
-            logo={experience.logo}
-            tasks={experience.tasks}
-          />
-        </div>
-      ))}
+      {
+        experiences.map((experience, index) => {
+          return (
+            <>
+              {index !== experiences.length - 1 ? (
+                <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                  <AboutExperience
+                    dates={experience.dates}
+                    role={experience.role}
+                    company={experience.company}
+                    description={experience.description}
+                    logo={experience.logo}
+                  />
+                </div>
+              ) : (
+                <div class="pb-10">
+                  <AboutExperience
+                    dates={experience.dates}
+                    role={experience.role}
+                    company={experience.company}
+                    description={experience.description}
+                    logo={experience.logo}
+                  />
+                </div>
+              )}
+            </>
+          )
+        })
+      }
     </div>
+    
 
     <RedirecButon text="VER MI CV" link="/Antonio Canteros.pdf" />
 
-    <Separator text="Estudios"/>
+    <SeparatorG text="Estudios"/>
 
     <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Educación</h2>
     <div class="px-5 py-10">
-      {education.map((education, loop) => (
-        <div class={loop <= 1 ? "pb-10 border-l border-gray-200 dark:border-neutral-700" : ""}>
-          <AboutExperience
-            dates={education.dates}
-            role={education.title}
-            company={education.institution}
-            description={education.description}
-            logo={education.logo}
-          />
-        </div>
-      ))}
+      {
+        educations.map((education, index) => {
+          return (
+            <>
+              {index !== educations.length - 1 ?  ( // Aquí se compara el índice actual con la longitud del array
+                <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                  <AboutExperience
+                    dates={education.dates}
+                    role={education.title}
+                    company={education.institution}
+                    description={education.description}
+                    logo={education.logo}
+                  />
+                </div>
+              ) : (
+                <div class="pb-10"> {/* Sin la clase border-l para el último elemento */}
+                  <AboutExperience
+                    dates={education.dates}
+                    role={education.title}
+                    company={education.institution}
+                    description={education.description}
+                    logo={education.logo}
+                  />
+                </div>
+              )}
+            </>
+          )
+        })
+      }
     </div>
+    
+
 
     <!-- Incluye el script de main.js -->
     <script src="/src/assets/js/main.js"></script> <!-- Ruta correcta al main.js -->

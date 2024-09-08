@@ -4,85 +4,13 @@
 		"role": "Back-end Developer",
 		"company": "Refactoring Life",
 		"description": "Desarrollador de aplicaciones web con Java y Spring Boot.",
-		"logo": "/assets/images/experiences/1.png",
-		"tasks": [
-			{
-				"title": "Desarrollo Backend",
-				"description": "Dirigí el desarrollo del backend para una aplicación móvil de gestión de estudiantes y contenido de cursos utilizando Java y Spring Boot."
-			},
-			{
-				"title": "Implementación de Microservicios",
-				"description": "Implementé microservicios con Spring Cloud y diferentes patrones, garantizando la escalabilidad y eficiencia del proyecto."
-			},
-			{
-				"title": "Gestión de Autenticación",
-				"description": "Gestioné la autenticación centralizada con Spring Security y JWT, fortaleciendo la seguridad de la aplicación."
-			},
-			{
-				"title": "Migración de Bases de Datos",
-				"description": "Utilicé Flyway para la migración de bases de datos y gestioné el control de versiones con GitHub, asegurando un proceso efectivo."
-			},
-			{
-				"title": "Aplicación de Principios Clean Code y SOLID",
-				"description": "Apliqué principios de clean code y SOLID, optimizando la mantenibilidad del código."
-			},
-			{
-				"title": "Uso de Patrones de Diseño",
-				"description": "Utilicé patrones de diseño como Builder y Factory, mejorando la estructura del código y su eficiencia."
-			},
-			{
-				"title": "Comprensión de Arquitecturas Complejas",
-				"description": "Comprendí y apliqué arquitecturas complejas como Config Server y Eureka, mejorando la eficiencia del proyecto."
-			},
-			{
-				"title": "Implementación de Arquitectura en Capas",
-				"description": "Implementé microservicios con una arquitectura en capas para asegurar la modularidad y escalabilidad del sistema."
-			}
-		]
+		"logo": "/assets/images/experiences/1.png"
 	},
 	{
 		"dates": "DICIEMBRE 2010 - ACTUALIDAD",
 		"role": "Electricista Industrial",
 		"company": "LANXESS",
 		"description": "Mantenimiento de equipos eléctricos industriales.",
-		"logo": "/assets/images/experiences/lanxess.png",
-		"tasks": [
-			{
-				"title": "Configuración de PLC y Módulos",
-				"description": "Configuré y gestioné PLC y módulos para mejorar la eficiencia operativa."
-			},
-			{
-				"title": "Desarrollo y Pruebas de Programas en PLC",
-				"description": "Desarrollé y probé programas en PLC, asegurando su correcto funcionamiento en el entorno de producción."
-			},
-			{
-				"title": "Mantenimiento Preventivo y Correctivo",
-				"description": "Planifiqué y ejecuté tareas de mantenimiento preventivo y correctivo, asegurando la continuidad operativa de los equipos."
-			},
-			{
-				"title": "Diagnóstico de Fallas",
-				"description": "Diagnosticé y solucioné fallas en equipos eléctricos, minimizando tiempos de inactividad."
-			},
-			{
-				"title": "Mantenimiento de Equipos Seguros",
-				"description": "Mantuve los equipos operativos y seguros, cumpliendo con los estándares de seguridad eléctrica."
-			},
-			{
-				"title": "Ejecución de Proyectos de Mejora",
-				"description": "Ideé y ejecuté proyectos de mejora para optimizar el rendimiento de los equipos."
-			},
-			{
-				"title": "Creación de Instructivos Técnicos",
-				"description": "Redacté y actualicé instructivos para transferir conocimientos técnicos al resto del equipo."
-			},
-			{
-				"title": "Análisis de Criticidad de Equipos",
-				"description": "Realicé análisis de criticidad de los equipos para priorizar el mantenimiento preventivo y correctivo."
-			},
-			{
-				"title": "Gestión de Proyectos Grupos",
-				"description": "Lideré proyectos grupales de mantenimiento, coordinando tareas y asegurando resultados efectivos."
-			}
-		]
+		"logo": "/assets/images/experiences/lanxess.png"
 	}
 ]

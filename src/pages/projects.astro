@@ -12,14 +12,13 @@ import Layout from "../layouts/main.astro";
       description="Aquí te presento una selección de mis proyectos más relevantes, donde aplico y perfecciono mis habilidades en desarrollo Back-End. Estos proyectos me han permitido resolver desafíos técnicos complejos, mejorar la eficiencia de los sistemas y seguir aprendiendo nuevas tecnologías. Te invito a explorar cada uno de ellos para descubrir cómo hago que las ideas cobren vida."
     />
 
-    <div class="z-50 flex flex-col space-y-7 mt-20">
+    <div class="z-50 flex flex-col space-y-7 mt-8">
       {
         projectsV.map((projectV) => {
           return (
             <ProjectV
               name={projectV.name}
               description={projectV.description}
-              description2={projectV.description2}
               image={projectV.image}
               url={projectV.url}
               cta={projectV.cta}
