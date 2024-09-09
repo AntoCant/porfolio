@@ -1,7 +1,7 @@
 ---
 const { name, description, url, image, cta } = Astro.props;
 import SeparatorG from "../components/separatorGeneric.astro";
-import RedirecButon from "../components/redirecButon.astro";
+import RedirecButton from "./redirecButton.astro";
 ---
 <div class="container">
 <SeparatorG text={cta} />
@@ -16,6 +16,6 @@ import RedirecButon from "../components/redirecButon.astro";
     </div>
   </a>
 </div>
-<RedirecButon text="Ver Proyecto" link={url} />
+<RedirecButton text="Ver Proyecto" link={url} />
 
 </div>

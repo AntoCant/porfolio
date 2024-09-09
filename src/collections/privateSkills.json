@@ -1,62 +1,67 @@
-[
-    {
+{
+    "title": "Principales Tecnologías Utilizadas",
+    "description": "Este proyecto integra una variedad de tecnologías para asegurar un desarrollo ágil y eficiente. El backend está desarrollado en Java con Spring Boot, mientras que Spring Cloud se encarga de gestionar la comunicación y configuración de los microservicios. La seguridad se implementa con Spring Security y OAuth2, utilizando JWT para la autenticación y gestión de roles. PostgreSQL se utiliza como base de datos principal, garantizando un manejo robusto y eficiente de la información.",
+    "skills": [
+      {
         "name": "Java",
         "icon": "/assets/images/icons/java.png"
-    },
-    {
+      },
+      {
         "name": "Springboot",
         "icon": "/assets/images/icons/springboot.png"
-    },
-    {
+      },
+      {
         "name": "Jenkins",
         "icon": "/assets/images/icons/jenkins.png"
-    },
-    {
+      },
+      {
         "name": "Gradle",
         "icon": "/assets/images/icons/gradle.png"
-    },
-    {
+      },
+      {
         "name": "PostgreSQL",
         "icon": "/assets/images/icons/postgres.png"
-    },
-    {
+      },
+      {
         "name": "Swagger",
         "icon": "/assets/images/icons/swagger.png"
-    },
-    {
+      },
+      {
         "name": "Docker",
         "icon": "/assets/images/icons/docker.png"
-    },
-    {
+      },
+      {
         "name": "Jwt",
         "icon": "/assets/images/icons/jwt.png"
-    },
-    {
+      },
+      {
         "name": "Git",
         "icon": "/assets/images/icons/git.png"
-    },
-    {
+      },
+      {
         "name": "GitHub",
         "icon": "/assets/images/icons/github.png"
-    },
-    {
+      },
+      {
         "name": "S. Cloud",
         "icon": "/assets/images/icons/cloud.png"
-    },
-    {
+      },
+      {
         "name": "S. Security",
         "icon": "/assets/images/icons/security.png"
-    },
-    {
+      },
+      {
         "name": "Flayway",
         "icon": "/assets/images/icons/flay.png"
-    },
-    {
+      },
+      {
         "name": "MapStruct",
         "icon": "/assets/images/icons/map.png"
-    },
-    {
+      },
+      {
         "name": "junit 5 + M",
         "icon": "/assets/images/icons/test.png"
-    }
-]
+      }
+    ]
+  }
+  

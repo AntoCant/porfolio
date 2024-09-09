@@ -1,0 +1,32 @@
+[
+    {
+      "id": "1",
+      "title": "Plantilla Astro",
+      "content1": "Este proyecto fue creado inicialmente a partir de una plantilla de Astro, la cual personalicé profundamente para reflejar mis conocimientos, experiencia y estilo personal. Aunque mi enfoque principal es el backend, me adentré en el mundo del front-end para modificar y adaptar la plantilla.",
+      "content2": "A lo largo del proceso, aprendí a generar componentes reutilizables, lo que optimizó el desarrollo y permitió una mayor consistencia en la interfaz. Creé nuevas páginas HTML desde cero y realicé el diseño de las imágenes, lo que añadió un toque visual único a la presentación del proyecto. Este desafío me permitió salir de mi zona de confort y adquirir habilidades en Astro, expandiendo mis capacidades más allá del backend."
+    },
+    {
+      "id": "2",
+      "title": "Diseños Personalizados",
+      "content1": "Diseñé miniaturas, logos e imágenes para darle un estilo único a la página. Aunque el diseño no es mi especialidad, este reto me permitió crear una identidad visual sólida. Para lograr esto, me inspiré en otros portafolios, buscando ideas sobre cómo transmitir profesionalismo y creatividad de manera efectiva.",
+      "content2": "Además, pedí feedback a colegas para ajustar los detalles y asegurarme de que el resultado fuera coherente. Durante este proceso, descubrí una faceta creativa que no había explorado antes, lo cual me ayudó a comprender mejor la importancia del diseño en la presentación de proyectos."
+    },
+    {
+      "id": "3",
+      "title": "Despliegue en VPS",
+      "content1": "Tras finalizar el desarrollo de la página, empaqueté el proyecto en Docker y lo desplegué en mi propio servidor VPS, asegurando que todo funcionara de manera óptima. Aunque ya había trabajado con microservicios antes, esta fue mi primera experiencia desplegando una página completa, lo que me permitió seguir aprendiendo y expandiendo mis conocimientos.",
+      "content2": "Además, implementé Nginx para gestionar el tráfico y garantizar que el sitio fuera seguro y rápido. También utilicé certificados SSL para darle un nivel profesional al proyecto, asegurando una experiencia de usuario óptima en términos de rendimiento y seguridad."
+    },
+    {
+      "id": "4",
+      "title": "Desafios",
+      "content1": "Uno de los mayores desafíos fue adaptar una plantilla de Astro a mis necesidades, a pesar de mi experiencia limitada en front-end. Personalicé componentes y añadí funcionalidades como un carrusel de imágenes y una cuadrícula de habilidades, lo que me llevó a estudiar y entender la arquitectura de Astro para crear estos elementos desde cero, respetando su estructura modular.",
+      "content2": "Además, la creación de nuevas páginas personalizadas para cada proyecto implicó modificar el enrutamiento de la aplicación y generar contenido dinámico compatible con las nuevas funcionalidades. Todo esto fue un proceso de experimentación y pruebas para garantizar que las modificaciones no afectaran el rendimiento general ni la coherencia del sitio."
+    },
+    {
+      "id": "5",
+      "title": "Soluciones Técnicas",
+      "content1": "Para garantizar que las modificaciones no afectaran negativamente el rendimiento del proyecto, utilicé Docker desde el inicio. Al empaquetar el entorno de desarrollo en un contenedor, pude replicar el entorno de producción con precisión, lo que facilitó la identificación y solución de problemas antes del despliegue final. Esto permitió que las nuevas funcionalidades, como el carrusel y la cuadrícula de habilidades, se ejecutaran sin problemas en mi VPS personal.",
+      "content2": "Otro desafío técnico fue la configuración de Nginx y la gestión del tráfico en el VPS. Para resolver esto, me adentré en la optimización de servidores web, configurando Nginx para manejar eficientemente las solicitudes y asegurar una carga rápida de la página, mejorando tanto el rendimiento como la experiencia del usuario."
+    }
+  ]

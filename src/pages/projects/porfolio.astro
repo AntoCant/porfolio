@@ -1,9 +1,11 @@
 ---
 import Layout from "../../layouts/main.astro";
-import FeatureListPorfolio from "../../components/featureListPorfolio.astro";
-import features from "../../collections/featuresPorfolio.json";
 import Carrucel from "../../components/carousel.astro";
-import Separator from "../../components/home/separator.astro";
+import SeparatorGeneric from "../../components/separatorGeneric.astro";
+import ParagraphMenuPorfolio from "../../components/paragraphMenuPorfolio.astro";
+import Skills from "../../components/skills.astro";
+import skills from "../../collections/porfolioSkills.json";
+import RedirecButton from "../../components/redirecButton.astro";
 ---
 
 <Layout title="Mi Portafolio">
@@ -20,66 +22,17 @@ import Separator from "../../components/home/separator.astro";
       desplegado en mi VPS personal con Docker y Nginx.
     </p>
 
-    <Separator text="Galería de Imágenes" />
+    <SeparatorGeneric text="Galería de Imágenes" />
     <Carrucel />
-    <Separator text="Principales Características" />
-
-    <h2
-      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
-    >
-      Principales Características
-    </h2>
-
-    <FeatureListPorfolio items={features} />
-    <Separator text="Desafíos y Soluciones" />
-
-    <h2
-      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
-    >
-      Desafíos y Soluciones
-    </h2>
-    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      El principal desafío que enfrenté en este proyecto fue la adaptación de
-      una plantilla preexistente en Astro a mis necesidades particulares. A
-      pesar de no tener experiencia avanzada en front-end, tuve que incorporar
-      secciones completamente nuevas, personalizar componentes y añadir
-      funcionalidades que no estaban presentes en la plantilla original.
-    </p>
-    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      Uno de los aspectos más complejos fue la implementación de un carrusel de
-      imágenes y la cuadrícula de habilidades. Estas funcionalidades no estaban
-      contempladas en el diseño base, por lo que tuve que estudiar cómo
-      funcionan los componentes en Astro, entender su arquitectura y crear estos
-      elementos desde cero, respetando la estructura modular de la plantilla
-      para no romper la consistencia del código.
-    </p>
-    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      Otro reto significativo fue la creación de nuevas páginas personalizadas
-      para cada uno de los proyectos, lo que implicó modificar el enrutamiento
-      de la aplicación y generar contenido dinámico que fuera compatible tanto
-      con las nuevas funcionalidades como con la estructura original del sitio.
-      Esto requirió mucha experimentación y pruebas para asegurarme de que todo
-      funcionara correctamente, tanto en el entorno de desarrollo como en
-      producción.
-    </p>
-    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      Para asegurar que las modificaciones no afectaran negativamente el
-      rendimiento y la coherencia del proyecto, decidí utilizar Docker desde el
-      principio. Al empaquetar el entorno de desarrollo dentro de un contenedor
-      Docker, pude replicar de manera exacta el entorno de producción, lo que me
-      permitió identificar y resolver problemas antes del despliegue final. Esto
-      garantizó que las nuevas funcionalidades, como el carrusel y la cuadrícula
-      de habilidades, funcionaran de manera fluida en mi VPS personal.
-    </p>
-    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      Además, me enfrenté a desafíos técnicos relacionados con la configuración
-      de Nginx y la gestión del tráfico en mi VPS. Para resolverlo, estudié y
-      apliqué conceptos de optimización de servidores web, configurando Nginx
-      para manejar de manera eficiente las solicitudes y asegurar una carga
-      rápida de la página.
-    </p>
-
-    <Separator text="Comcluciones y aprendisaje" />
+    <SeparatorGeneric text="Principales Características" />
+    <ParagraphMenuPorfolio />
+    <SeparatorGeneric text="Tecnologías Usadas" />
+    <Skills
+      skills={skills.skills}
+      title={skills.title}
+      description={skills.description}
+    />
+    <SeparatorGeneric text="Concluciones y aprendisaje" />
 
     <h2
       class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
@@ -87,14 +40,45 @@ import Separator from "../../components/home/separator.astro";
       Concluciones
     </h2>
     <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      Finalmente, una de las lecciones más importantes que aprendí fue la
-      importancia de las pruebas y la iteración constante. Cada nueva
-      funcionalidad añadida requería varias pruebas y ajustes para que el
-      resultado final fuera óptimo tanto en términos de rendimiento como de
-      diseño, algo que fue especialmente difícil dado que mi enfoque principal
-      es el desarrollo de backend. Sin embargo, esta experiencia me permitió
-      aprender más sobre el front-end, mejorando mis habilidades y ampliando mi
-      capacidad para gestionar proyectos completos.
+      Finalmente, una de las lecciones más valiosas que me dejó este proyecto
+      fue la importancia de realizar pruebas continuas y ajustes constantes para
+      asegurar que cada nueva funcionalidad no solo funcione bien, sino que
+      también esté optimizada en términos de rendimiento y diseño. Al ser mi
+      especialización el backend, enfrentar estos retos en el front-end fue un
+      desafío significativo, pero me permitió adquirir nuevas habilidades que no
+      solo mejoraron mi capacidad técnica, sino que también ampliaron mi visión
+      sobre el ciclo completo de un proyecto.
     </p>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      Esta experiencia me enseñó a tener una perspectiva más global, desde la
+      estructura del backend hasta el impacto en la experiencia del usuario en
+      el front. Ahora, me siento más preparado para abordar proyectos de manera
+      integral, asegurando que cada detalle, tanto técnico como visual, funcione
+      en armonía y entregue el mejor resultado posible.
+    </p>
+
+    <SeparatorGeneric text="codigo" />
+    <h2
+      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
+    >
+      Explora el Código
+    </h2>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      Si tienes curiosidad por ver cómo está construido este portafolio, te
+      invito a visitar el repositorio en mi GitHub. ¡Siéntete libre de
+      explorarlo y compartir tus comentarios!
+    </p>
+    <RedirecButton
+      text="Ver Código"
+      link="https://github.com/AntoCant/porfolio"
+    />
   </section>
 </Layout>
+<script src="/src/assets/js/main.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    (window as any).loadDynamicContent(
+      "/src/collections/contentMapPorfolio.json",
+    );
+  });
+</script>

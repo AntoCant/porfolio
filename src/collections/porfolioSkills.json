@@ -1,0 +1,47 @@
+{
+    "title": "Principales Tecnologías Utilizadas",
+    "description": "A lo largo del desarrollo de mi portafolio, he tenido la oportunidad de utilizar una variedad de herramientas que me han permitido dar forma a este proyecto de manera eficiente. Desde Astro para gestionar la estructura del sitio, hasta Tailwind CSS para el diseño visual, cada tecnología ha cumplido un rol importante en llevar el proyecto desde la idea inicial hasta el despliegue final.",
+    "skills": [
+      {
+        "name": "Astro",
+        "icon": "/assets/images/icons/astro.png"
+      },
+      {
+        "name": "Java Script",
+        "icon": "/assets/images/icons/javaS.png"
+      },
+      {
+        "name": "Css",
+        "icon": "/assets/images/icons/css.png"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/assets/images/icons/t.css.png"
+      },
+      {
+        "name": "Html",
+        "icon": "/assets/images/icons/html.png"
+      },
+      {
+        "name": "Docker",
+        "icon": "/assets/images/icons/docker.png"
+      },
+      {
+        "name": "Git",
+        "icon": "/assets/images/icons/git.png"
+      },
+      {
+        "name": "GitHub",
+        "icon": "/assets/images/icons/github.png"
+      },
+      {
+        "name": "Nginx",
+        "icon": "/assets/images/icons/nginx.png"
+      },
+      {
+        "name": "NPM",
+        "icon": "/assets/images/icons/npm.png"
+      }
+    ]
+  }
+  
