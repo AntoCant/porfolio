@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "Back-end",
+    "content1": "El backend de la aplicación está desarrollado en Java con Spring Boot, lo que nos permite construir aplicaciones sólidas y escalables. Usamos Gradle para gestionar las dependencias y PostgreSQL como nuestra base de datos principal. Además, hemos implementado Swagger para mantener la documentación clara y accesible, y Flyway para que las migraciones de la base de datos se realicen de forma ágil y ordenada.",
+    "content2": "El equipo trabaja con varios módulos de Spring que nos ayudan a optimizar la comunicación entre microservicios (OpenFeign), gestionar la seguridad (OAuth2 y Spring Security) y manejar las interacciones con la base de datos (Spring Data JPA). Todo esto está cuidadosamente configurado para que el sistema funcione de manera eficiente y sea fácil de escalar a medida que crece el proyecto."
+  },
+  {
+    "id": "2",
+    "title": "Gestión de Usuarios y Autenticación",
+    "content1": "La aplicación implementa un sistema de autenticación robusto y seguro para el registro y acceso de usuarios a los contenidos de cada curso. Utiliza Spring Security y JWT para garantizar una autenticación confiable, mientras que OAuth2 se encarga de gestionar los permisos de acceso.",
+    "content2": "El proceso está respaldado por un microservicio dedicado para la generación de tokens y un Auth Server que orquesta el registro, login y la gestión de roles. Este servidor entrega tokens JWT personalizados, necesarios para acceder a los demás microservicios del sistema, manteniendo un registro seguro de usuarios con contraseñas hasheadas, y permitiendo a los usuarios restablecer sus contraseñas cuando lo necesiten."
+  },
+  {
+    "id": "3",
+    "title": "Notificaciones",
+    "content1": "El sistema de notificaciones está diseñado para mantener a estudiantes y profesores siempre informados. Utilizamos Spring Boot Starter Mail para gestionar las notificaciones por correo electrónico, que incluyen desde la confirmación de cuentas hasta la entrega de tokens para restablecer contraseñas o brindar soporte técnico. Estas notificaciones aseguran que los usuarios reciban información clave de manera rápida y segura.",
+    "content2": "Además, hemos desarrollado un microservicio dedicado exclusivamente a la gestión de notificaciones, lo que optimiza su funcionamiento y escalabilidad. También se incluyen notificaciones internas dentro de la aplicación, las cuales pueden ser recordatorios de horarios de clases, anuncios de docentes, o avisos sobre eventos importantes."
+  },
+  {
+    "id": "4",
+    "title": "Manejo de Contenido Educativo",
+    "content1": "El sistema de manejo de contenido educativo permite a los instructores subir y gestionar materiales de estudio como videos, documentos y evaluaciones de forma organizada. Los alumnos pueden acceder a estos recursos de acuerdo al curso en el que estén inscritos, asegurando una gestión eficiente y separada por curso y profesor.",
+    "content2": "Además, la aplicación de administración permite gestionar las notificaciones hacia los alumnos, ya sean relacionadas con el curso o sobre eventos específicos. Los instructores pueden enviar avisos de clase, notificaciones de horarios o cualquier evento relevante, asegurando que los estudiantes estén siempre informados de manera oportuna. La app está diseñada para ser intuitiva, facilitando el manejo de contenido y la comunicación con los alumnos."
+  },
+  {
+    "id": "5",
+    "title": "Colaboración en Equipo",
+    "content1": "El equipo de desarrollo cuenta con 4 personas: 2 en backend y 2 en frontend, que trabajan en constante colaboración. Utilizamos la metodología Agile Scrum, con reuniones diarias (dailys) para mantener sincronizados los esfuerzos del equipo. Cada sprint dura entre 2 y 3 semanas, donde se planifican y priorizan las funcionalidades a implementar. Al finalizar cada sprint, hacemos retrospectivas para mejorar y ajustar el proceso. También se revisan los contratos de los servicios y se aseguran las buenas prácticas de calidad del código.",
+    "content2": "Con la reciente incorporación de un desarrollador backend adicional y dos nuevos miembros en frontend, el equipo ha ganado velocidad en la entrega de funcionalidades. Este crecimiento ha facilitado una mayor especialización y distribución de tareas, mejorando la colaboración y la comunicación entre los equipos."
+  },
+  {
+    "id": "6",
+    "title": "CI/CD con Jenkins y Docker",
+    "content1": "El sistema está integrado con Jenkins para automatizar el proceso de CI/CD (Integración Continua y Despliegue Continuo), lo que nos permite gestionar de manera eficiente los despliegues de nuevos microservicios y actualizaciones. Cada vez que se realiza un cambio en el código, Jenkins se encarga de construir, probar y desplegar automáticamente los servicios, asegurando una integración fluida y minimizando el riesgo de errores manuales.",
+    "content2": "Además, utilizamos Docker para manejar los entornos de desarrollo y producción. Todos los microservicios, junto con Jenkins, están desplegados en nuestro VPS personal, lo que facilita la gestión centralizada de nuestra arquitectura. Con Docker, podemos garantizar que cada servicio se ejecute de forma consistente en cualquier entorno, lo que nos permite escalar el sistema según sea necesario."
+  },
+  {
+    "id": "7",
+    "title": "Frontend",
+    "content1": "El frontend de la aplicación está desarrollado en Kotlin, utilizando Jetpack Compose, una potente herramienta que nos ha permitido construir una interfaz de usuario moderna, intuitiva y completamente optimizada para dispositivos móviles. Esta tecnología no solo facilita la creación de componentes visuales, sino que también mejora significativamente el rendimiento en dispositivos Android, asegurando una experiencia fluida y atractiva para los usuarios.",
+    "content2": "Toda la interfaz de usuario está diseñada específicamente para Android, empaquetada en un APK que brinda a los usuarios una experiencia nativa. Con Jetpack Compose, hemos logrado una integración eficiente entre el frontend y los microservicios del backend, permitiendo que los usuarios puedan navegar y acceder al contenido de manera rápida y segura. La interfaz es fácil de usar, con una arquitectura flexible que permite futuras actualizaciones y mejoras sin comprometer la experiencia del usuario."
+  }
+]

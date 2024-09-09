@@ -1,10 +1,9 @@
 ---
 import Layout from "../../layouts/main.astro";
-import FeatureList from "../../components/featureList.astro";
-import features from "../../collections/features.json";
-import Separator from "../../components/home/separator.astro";
 import PrivateSkills from "../../components/PrivateSkills.astro";
+import SeparatorGeneric from "../../components/separatorGeneric.astro";
 import Carousel from "../../components/carousel.astro";
+import ParagraphMenuPP from "../../components/paragraphMenuPP.astro";
 
 const projectTitle =
   " Aplicación Móvil para Gestión de Estudiantes y Cursos (Proyecto Privado)";
@@ -22,47 +21,46 @@ const projectDescription =
     <p class="mt-8 text-base text-neutral-600 dark:text-neutral-400">
       {projectDescription}
     </p>
-    <Separator text="Galeria de Imágenes" />
-    <Carousel />    
-    <Separator text="Principales Características" />
-    <h2
-      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
-    >
-      Principales Características
-    </h2>
+    <SeparatorGeneric text="Galeria de Imágenes" />
+    <Carousel />
+    <SeparatorGeneric text="Principales Características" />
 
-    <FeatureList items={features} />
+    <ParagraphMenuPP />
 
-    <h2
-      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
-    >
-    Actualización del Equipo
-    </h2>
-    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      Recientemente, el equipo se ha expandido con un desarrollador adicional
-      para backend y dos nuevos miembros en frontend, lo que ha permitido un
-      avance más rápido en la implementación de nuevas funcionalidades.
-    </p>
-
-    <Separator text="Tecnologías Utilizadas" />
+    <SeparatorGeneric text="Tecnologías Utilizadas" />
 
     <PrivateSkills />
 
-    <h2
-      class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
-    >
-      Impacto o Resultados
-    </h2>
-    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
-      El proyecto ha mejorado significativamente la eficiencia en la gestión de
-      estudiantes, reduciendo el tiempo necesario para administrar datos en un
-      30%.
-    </p>
+    <SeparatorGeneric text="Impacto y Resultados" />
 
     <h2
       class="mt-8 text-2xl font-semibold leading-8 text-neutral-800 dark:text-neutral-200"
     >
-      Galería de Imágenes
+      Impacto y Resultados
     </h2>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      El proyecto no solo ha mejorado la eficiencia en la gestión de
+      estudiantes, reduciendo el tiempo necesario para administrar datos, sino
+      que también ha optimizado varios procesos clave en la academia. La
+      integración de microservicios ha permitido una escalabilidad fluida a
+      medida que el número de usuarios ha crecido, asegurando que el sistema
+      pueda manejar una mayor carga sin comprometer el rendimiento.
+    </p>
+    <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+      Además, el sistema de notificaciones automáticas ha mejorado
+      significativamente la comunicación entre instructores y estudiantes,
+      proporcionando actualizaciones en tiempo real sobre tareas, evaluaciones y
+      eventos importantes. Gracias a la automatización de estos procesos, se ha
+      reducido la carga administrativa, permitiendo a los instructores centrarse
+      más en la enseñanza y menos en la gestión manual. Esto ha incrementado la
+      satisfacción tanto del cuerpo docente como de los alumnos, reflejándose en
+      una mejora de la experiencia educativa en general.
+    </p>
   </section>
+  <script src="/src/assets/js/main.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      (window as any).loadDynamicContent("/src/collections/contentMapPP.json");
+    });
+  </script>
 </Layout>

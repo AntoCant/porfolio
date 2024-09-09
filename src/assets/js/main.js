@@ -174,48 +174,51 @@ window.closeMobileMenu = () => {
 	document.getElementById("mobileMenuBackground").classList.add("hidden");
 };
 
-window.addEventListener('DOMContentLoaded', () => {
-	const menu = document.getElementById('menu-dinamic');
-	const titleElement = document.getElementById('section-title');
-	const contentElement = document.getElementById('section-content');
-	const contentElement2 = document.getElementById('section-content2');
-	fetch('/src/collections/contentMap.json')
-		.then(response => response.json())
-		.then(contentMap => {
-			if (menu) {
-				const menuItems = document.querySelectorAll('.menu-item');
-				const firstContent = contentMap.find(item => item.id === 'biografia');
-				if (firstContent) {
-					titleElement.textContent = firstContent.title;
-					contentElement.textContent = firstContent.content1;
-					contentElement2.textContent = firstContent.content2;
-				}
-				menuItems.forEach((item, index) => {
-					if (index === 0) {
-						item.classList.add('active');
-					} else {
-						item.classList.remove('active');
-					}
-				});
-				menu.addEventListener('click', function (event) {
-					const target = event.target;
-					if (target && target.tagName === 'BUTTON') {
-						const categoryId = target.getAttribute('data-id');
-						const selectedContent = contentMap.find(item => item.id === categoryId);
+export function loadDynamicContent(jsonFile) {
+  const menu = document.getElementById('menu-dinamic');
+  const titleElement = document.getElementById('section-title');
+  const contentElement = document.getElementById('section-content');
+  const contentElement2 = document.getElementById('section-content2');
 
-						if (selectedContent) {
-							titleElement.textContent = selectedContent.title;
-							contentElement.textContent = selectedContent.content1;
-							contentElement2.textContent = selectedContent.content2;
-						}
-						menuItems.forEach(i => i.classList.remove('active'));
-						target.classList.add('active');
-					}
-				});
-			}
-		})
-		.catch(error => console.error("Error al cargar el contenido del JSON:", error));
-});
+  fetch(jsonFile)
+    .then(response => response.json())
+    .then(contentMap => {
+      if (menu) {
+        const menuItems = document.querySelectorAll('.menu-item');
+        const firstContent = contentMap.find(item => item.id === '1');
+        if (firstContent) {
+          titleElement.textContent = firstContent.title;
+          contentElement.textContent = firstContent.content1;
+          contentElement2.textContent = firstContent.content2;
+        }
+        menuItems.forEach((item, index) => {
+          if (index === 0) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+        menu.addEventListener('click', function (event) {
+          const target = event.target;
+          if (target && target.tagName === 'BUTTON') {
+            const categoryId = target.getAttribute('data-id');
+            const selectedContent = contentMap.find(item => item.id === categoryId);
+
+            if (selectedContent) {
+              titleElement.textContent = selectedContent.title;
+              contentElement.textContent = selectedContent.content1;
+              contentElement2.textContent = selectedContent.content2;
+            }
+            menuItems.forEach(i => i.classList.remove('active'));
+            target.classList.add('active');
+          }
+        });
+      }
+    })
+    .catch(error => console.error('Error al cargar el contenido del JSON:', error));
+}
+
+window.loadDynamicContent = loadDynamicContent;
 
 
 

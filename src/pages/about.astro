@@ -11,7 +11,6 @@ import RedirecButon from "../components/redirecButon.astro";
 
 <Layout title="About Me">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
-    
     <PageHeading
       title="Sobre mí"
       description="Te doy una mirada rápida a mi recorrido como desarrollador y las motivaciones que me impulsan a seguir mejorando cada día en el campo del desarrollo Back-End."
@@ -21,11 +20,15 @@ import RedirecButon from "../components/redirecButon.astro";
       src="/assets/images/aboutPersonal.png"
       class="relative z-30 w-full my-10 rounded-xl"
     />
-    
-    <ParagraphMenu />
-    <SeparatorG text="Experiencia"/>
 
-    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Experiencia Profesional</h2>
+    <ParagraphMenu />
+    <SeparatorG text="Experiencia" />
+
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Experiencia Profesional
+    </h2>
     <div class="px-5 py-10">
       {
         experiences.map((experience, index) => {
@@ -53,23 +56,26 @@ import RedirecButon from "../components/redirecButon.astro";
                 </div>
               )}
             </>
-          )
+          );
         })
       }
     </div>
-    
 
     <RedirecButon text="VER MI CV" link="/Antonio Canteros.pdf" />
 
-    <SeparatorG text="Estudios"/>
+    <SeparatorG text="Estudios" />
 
-    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Educación</h2>
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Educación
+    </h2>
     <div class="px-5 py-10">
       {
         educations.map((education, index) => {
           return (
             <>
-              {index !== educations.length - 1 ?  ( // Aquí se compara el índice actual con la longitud del array
+              {index !== educations.length - 1 ? ( 
                 <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
                   <AboutExperience
                     dates={education.dates}
@@ -80,7 +86,7 @@ import RedirecButon from "../components/redirecButon.astro";
                   />
                 </div>
               ) : (
-                <div class="pb-10"> {/* Sin la clase border-l para el último elemento */}
+                <div class="pb-10">
                   <AboutExperience
                     dates={education.dates}
                     role={education.title}
@@ -91,14 +97,16 @@ import RedirecButon from "../components/redirecButon.astro";
                 </div>
               )}
             </>
-          )
+          );
         })
       }
     </div>
-    
 
-
-    <!-- Incluye el script de main.js -->
-    <script src="/src/assets/js/main.js"></script> <!-- Ruta correcta al main.js -->
+    <script src="/src/assets/js/main.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        (window as any).loadDynamicContent("/src/collections/contentMap.json");
+      });
+    </script>
   </section>
 </Layout>
