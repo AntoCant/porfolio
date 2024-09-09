@@ -1,33 +1,32 @@
 [
-    {
-      "id": "mov",
-      "title": "Motivación",
-      "content1": "Mi interés por la programación nació gracias a algunos amigos que ya estaban en el rubro. Apenas empezaron a mostrarme sus proyectos y a explicarme el tipo de trabajo que hacían, supe que este mundo era para mí. Lo que más me atrapó fue la lógica detrás del desarrollo back-end. Entender cómo funcionan las cosas detrás de escena me resultó fascinante y me motivó a seguir aprendiendo.",
-      "content2": "Soy alguien a quien los desafíos lo mantienen en movimiento, y en este sector encontré justamente eso: la oportunidad de enfrentar retos constantemente. Lo que más disfruto es que nunca se deja de aprender. Cada nuevo proyecto trae consigo la posibilidad de adquirir nuevas habilidades y mejorar, y eso es lo que me impulsa a seguir adelante. Mi sueño es convertirme en arquitecto de software, pero lo que más disfruto es el proceso continuo de aprendizaje y superación."
-    },
-    {
-      "id": "pasatiempos",
-      "title": "Pasatiempos",
-      "content1": "Cuando no estoy programando, me encanta aprender sobre nuevas tecnologías, jugar videojuegos y salir a caminar para despejarme. Disfruto mucho descubrir nuevos lugares para tomar café, que es prácticamente esencial en mi vida. También soy fan de pasar tiempo con amigos, ver series y películas. Además, siempre estoy leyendo sobre tendencias en la industria tech y buscando aprender algo nuevo, aunque sea fuera del ámbito laboral. Me gusta aprovechar cada oportunidad para mejorar, tanto en lo profesional como en lo personal.",
-      "content2": ""
-    },
-    {
-      "id": "aprendizaje",
-      "title": "Aprendizaje",
-      "content1": "Uno de los mayores aprendizajes que he tenido en este camino es que en tecnología, nunca se deja de aprender. La práctica constante es clave, pero también he descubierto que codear no lo es todo. El análisis y la planificación son pasos fundamentales antes de encarar cualquier proyecto.Otro aspecto importante es la comunicación: aprender a expresar tus ideas y conocimientos es esencial. Si no puedes compartir lo que sabes o lo que piensas, no ayudas a avanzar. Ser humilde también es crucial, porque siempre puedes aprender algo de los demás, ya sea una nueva perspectiva o un detalle que quizás no habías considerado.",
-      "content2": "Y, por supuesto, la resiliencia, la persistencia y la paciencia. Aprender de los errores y ser constante es lo que te permite mejorar cada día y alcanzar tus metas a largo plazo."
-    },
-    {
-      "id": "desafio",
-      "title": "Desafios",
-      "content1": "Uno de los mayores desafíos que enfrenté fue crear mi propio servidor de autenticación (auth-server) utilizando OAuth2 con PKCE. Al principio, entender todo el flujo de autenticación y alinear las configuraciones fue bastante complicado. Pero, después de leer mucha documentación, hacer pruebas y tener paciencia, logré implementarlo con éxito y dejarlo desplegado en mi VPS.",
-      "content2": "Otro gran desafío, aunque no tan técnico, fue aprender a trabajar en equipo en proyectos grandes. En un curso, mi equipo fue el encargado del back-end para cinco equipos de front-end, y coordinar los contratos de servicios, las funcionalidades y alinear tantos puntos de vista diferentes fue una experiencia muy enriquecedora. Aunque costó al principio, una vez que logramos entendernos, el proyecto salió adelante y fue una gran satisfacción."
-    },
-    {
-      "id": "biografia",
-      "title": "Biografiía",
-      "content1": "Quiero invitarte a descubrir no solo mi trabajo como desarrollador, sino también quién soy más allá del código. Este espacio refleja mi pasión por enfrentar desafíos, aprender constantemente y disfrutar de cada paso del proceso. Desde mis proyectos hasta los momentos en los que me desconecto para tomar un café o compartir con amigos, todo forma parte de mi camino.",
-      "content2": "Te invito a explorar y conocer más sobre mi trabajo, mis aprendizajes y las experiencias que me han ayudado a crecer tanto personal como profesionalmente. ¡Bienvenido!"
-    }
-  ]
-  
+  {
+    "id": "1",
+    "title": "Biografia",
+    "content1": "Quiero invitarte a descubrir no solo mi trabajo como desarrollador, sino también quién soy más allá del código. Este espacio refleja mi pasión por enfrentar desafíos, aprender constantemente y disfrutar de cada paso del proceso. Desde mis proyectos hasta los momentos en los que me desconecto para tomar un café o compartir con amigos, todo forma parte de mi camino.",
+    "content2": "Te invito a explorar y conocer más sobre mi trabajo, mis aprendizajes y las experiencias que me han ayudado a crecer tanto personal como profesionalmente. ¡Bienvenido!"
+  },
+  {
+    "id": "2",
+    "title": "Pasatiempos",
+    "content1": "Cuando no estoy programando, me encanta aprender sobre nuevas tecnologías, jugar videojuegos y salir a caminar para despejarme. Disfruto mucho descubrir nuevos lugares para tomar café, que es prácticamente esencial en mi vida. También soy fan de pasar tiempo con amigos, ver series y películas. Además, siempre estoy leyendo sobre tendencias en la industria tech y buscando aprender algo nuevo, aunque sea fuera del ámbito laboral. Me gusta aprovechar cada oportunidad para mejorar, tanto en lo profesional como en lo personal.",
+    "content2": ""
+  },
+  {
+    "id": "3",
+    "title": "Aprendizaje",
+    "content1": "Uno de los mayores aprendizajes que he tenido en este camino es que en tecnología, nunca se deja de aprender. La práctica constante es clave, pero también he descubierto que codear no lo es todo. El análisis y la planificación son pasos fundamentales antes de encarar cualquier proyecto.Otro aspecto importante es la comunicación: aprender a expresar tus ideas y conocimientos es esencial. Si no puedes compartir lo que sabes o lo que piensas, no ayudas a avanzar. Ser humilde también es crucial, porque siempre puedes aprender algo de los demás, ya sea una nueva perspectiva o un detalle que quizás no habías considerado.",
+    "content2": "Y, por supuesto, la resiliencia, la persistencia y la paciencia. Aprender de los errores y ser constante es lo que te permite mejorar cada día y alcanzar tus metas a largo plazo."
+  },
+  {
+    "id": "4",
+    "title": "Desafios",
+    "content1": "Uno de los mayores desafíos que enfrenté fue crear mi propio servidor de autenticación (auth-server) utilizando OAuth2 con PKCE. Al principio, entender todo el flujo de autenticación y alinear las configuraciones fue bastante complicado. Pero, después de leer mucha documentación, hacer pruebas y tener paciencia, logré implementarlo con éxito y dejarlo desplegado en mi VPS.",
+    "content2": "Otro gran desafío, aunque no tan técnico, fue aprender a trabajar en equipo en proyectos grandes. En un curso, mi equipo fue el encargado del back-end para cinco equipos de front-end, y coordinar los contratos de servicios, las funcionalidades y alinear tantos puntos de vista diferentes fue una experiencia muy enriquecedora. Aunque costó al principio, una vez que logramos entendernos, el proyecto salió adelante y fue una gran satisfacción."
+  },
+  {
+    "id": "5",
+    "title": "Motivación",
+    "content1": "Mi interés por la programación nació gracias a algunos amigos que ya estaban en el rubro. Apenas empezaron a mostrarme sus proyectos y a explicarme el tipo de trabajo que hacían, supe que este mundo era para mí. Lo que más me atrapó fue la lógica detrás del desarrollo back-end. Entender cómo funcionan las cosas detrás de escena me resultó fascinante y me motivó a seguir aprendiendo.",
+    "content2": "Soy alguien a quien los desafíos lo mantienen en movimiento, y en este sector encontré justamente eso: la oportunidad de enfrentar retos constantemente. Lo que más disfruto es que nunca se deja de aprender. Cada nuevo proyecto trae consigo la posibilidad de adquirir nuevas habilidades y mejorar, y eso es lo que me impulsa a seguir adelante. Mi sueño es convertirme en arquitecto de software, pero lo que más disfruto es el proceso continuo de aprendizaje y superación."
+  }
+]
