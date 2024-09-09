@@ -2,10 +2,12 @@
 import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Layout from "../layouts/main.astro";
-import RedirecButon from "../components/redirecButon.astro";
-import HardSkills from "../components/hardSkills.astro";
+import RedirecButton from "../components/redirecButton.astro";
+import Skills from "../components/skills.astro";
 import EmailDisplay from "../components/emailDisplay.astro";
 import Certificate from "../components/home/certificate.astro";
+import skills from "../collections/hardSkills.json";
+
 ---
 
 <Layout title="Anto">
@@ -139,8 +141,8 @@ import Certificate from "../components/home/certificate.astro";
             >
           </li>
         </ul>
-        <RedirecButon text="Mi CV" link="/Antonio Canteros.pdf" />
-        <RedirecButon text="Mis Proyectos" link="/projects" />
+        <RedirecButton text="Mi CV" link="/Antonio Canteros.pdf" />
+        <RedirecButton text="Mis Proyectos" link="/projects" />
 
         <div class="flex space-x-4 mt-11 items-center">
           <a
@@ -219,7 +221,7 @@ import Certificate from "../components/home/certificate.astro";
   </div>
 
   <Separator text="Skills" />
-  <HardSkills />
+  <Skills skills={skills.skills} title={skills.title} description={skills.description}/>
   <Separator text="Mis proyectos" />
   <Projects />
   <Separator text="Mis Certificados" />

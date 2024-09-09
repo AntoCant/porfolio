@@ -1,9 +1,10 @@
 ---
 import Layout from "../../layouts/main.astro";
-import PrivateSkills from "../../components/PrivateSkills.astro";
+import Skills from "../../components/skills.astro";
 import SeparatorGeneric from "../../components/separatorGeneric.astro";
 import Carousel from "../../components/carousel.astro";
 import ParagraphMenuPP from "../../components/paragraphMenuPP.astro";
+import skills from "../../collections/privateSkills.json";
 
 const projectTitle =
   " Aplicación Móvil para Gestión de Estudiantes y Cursos (Proyecto Privado)";
@@ -29,7 +30,7 @@ const projectDescription =
 
     <SeparatorGeneric text="Tecnologías Utilizadas" />
 
-    <PrivateSkills />
+    <Skills skills={skills.skills} title={skills.title} description={skills.description} />
 
     <SeparatorGeneric text="Impacto y Resultados" />
 
