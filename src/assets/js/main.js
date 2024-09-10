@@ -219,6 +219,3 @@ export function loadDynamicContent(jsonFile) {
 }
 
 window.loadDynamicContent = loadDynamicContent;
-
-
-

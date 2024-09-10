@@ -5,9 +5,7 @@ import Project from "../project.astro";
 ---
 
 <section class="max-w-4xl mx-auto px-7 lg:px-0">
-  <h2
-    class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
-  >
+  <h2 class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100">
     Proyectos
   </h2>
   <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
@@ -43,18 +41,25 @@ import Project from "../project.astro";
 
 <script>
   declare var Splide: any;
-
   document.addEventListener("DOMContentLoaded", function () {
     new Splide("#splide", {
       type: "loop",
-      perPage: 3,
-      perMove: 1,
-      gap: "1rem",
-      autoplay: true,
-      interval: 5000,
-      speed: 1800,
-      pauseOnHover: true,
-      easing: "linear",
+      perPage: 3, // Mostrar un elemento a la vez en móviles
+      perMove: 1, // Mover un elemento a la vez
+      gap: "1rem", // Espacio entre elementos
+      autoplay: false, // Desactivar el autoplay
+      breakpoints: {
+        640: {
+          perPage: 1,
+          gap: "0.5rem", // Ajustar espacio en pantallas pequeñas
+        },
+        768: {
+          perPage: 1,
+          gap: "0.75rem", // Ajustar espacio en pantallas medianas
+        },
+      },
     }).mount();
   });
 </script>
+
+
