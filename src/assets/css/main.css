@@ -68,24 +68,6 @@ html.dark #darkToggle:hover .horizon {
 
 }
 
-@layer components {
-  .splide__pagination__page {
-    @apply bg-gray-300 border-none opacity-100;
-  }
-
-  .splide__pagination__page.is-active {
-    @apply bg-black;
-  }
-
-  .dark .splide__pagination__page {
-    @apply bg-gray-600;
-  }
-
-  .dark .splide__pagination__page.is-active {
-    @apply bg-white;
-  }
-}
-
 .menu-item.active {
   color: #000000;
   font-weight: bold;
@@ -167,4 +149,64 @@ html.dark #darkToggle:hover .horizon {
 .card-container:hover {
   border: 1px dashed #ddd;
   transition: border 0.3s ease-in-out;
+}
+
+/* Ajustes generales */
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Ajustes generales para el carrusel */
+.splide__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 640px) {
+  .splide__slide {
+    padding: 0.5rem;
+  }
+  
+  .splide__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 768px) {
+  .splide__slide {
+    padding: 0.75rem;
+  }
+}
+
+/* Paginación */
+.splide__pagination__page {
+  background-color: gray;
+}
+
+.splide__pagination__page.is-active {
+  background-color: black;
+}
+
+.dark .splide__pagination__page {
+  background-color: lightgray;
+}
+
+.dark .splide__pagination__page.is-active {
+  background-color: white;
+}
+
+/* Estilos activos del menú */
+.menu-item.active {
+  color: #000000;
+  font-weight: bold;
+}
+
+.dark .menu-item.active {
+  color: #ffffff;
+  font-weight: bold;
 }

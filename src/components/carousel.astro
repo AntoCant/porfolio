@@ -19,12 +19,11 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     new Splide("#splide", {
-      type: "loop", // Ciclo infinito
-      perPage: 1, // Mostrar una diapositiva a la vez
-      autoplay: true, // Activar deslizamiento automático
-      interval: 4000, // Intervalo de 5 segundos entre diapositivas
-      speed: 1000, // Duración de la transición en milisegundos (1 segundo)
-      pauseOnHover: true, // Pausar el deslizamiento cuando se pasa el mouse
+      type: "loop",
+      perPage: 1,
+      autoplay: false,
+      speed: 1000,
+      pauseOnHover: true,
     }).mount();
   });
 </script>
