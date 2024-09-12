@@ -44,18 +44,18 @@ import Project from "../project.astro";
   document.addEventListener("DOMContentLoaded", function () {
     new Splide("#splide", {
       type: "loop",
-      perPage: 3, // Mostrar un elemento a la vez en móviles
-      perMove: 1, // Mover un elemento a la vez
-      gap: "1rem", // Espacio entre elementos
-      autoplay: false, // Desactivar el autoplay
+      perPage: 3, 
+      perMove: 1, 
+      gap: "1rem", 
+      autoplay: false, 
       breakpoints: {
         640: {
           perPage: 1,
-          gap: "0.5rem", // Ajustar espacio en pantallas pequeñas
+          gap: "0.5rem",
         },
         768: {
           perPage: 1,
-          gap: "0.75rem", // Ajustar espacio en pantallas medianas
+          gap: "0.75rem",
         },
       },
     }).mount();
