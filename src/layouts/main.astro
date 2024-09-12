@@ -24,10 +24,10 @@ const { title } = Astro.props;
       }
     </script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
-    />
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+/>
 
     <style>
       .prose img {
@@ -44,9 +44,7 @@ const { title } = Astro.props;
     <slot />
     <Footer />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
-      defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
 
     <script src="../assets/js/main.js"></script>
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />
