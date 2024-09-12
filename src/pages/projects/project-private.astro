@@ -2,7 +2,6 @@
 import Layout from "../../layouts/main.astro";
 import Skills from "../../components/skills.astro";
 import SeparatorGeneric from "../../components/separatorGeneric.astro";
-import Carousel from "../../components/carousel.astro";
 import ParagraphMenuPP from "../../components/paragraphMenuPP.astro";
 import skills from "../../collections/privateSkills.json";
 
@@ -23,7 +22,10 @@ const projectDescription =
       {projectDescription}
     </p>
     <SeparatorGeneric text="Galeria de Imágenes" />
-    <Carousel />
+    <img
+    src="/assets/images/projectP/arquitectura.png"
+    class="relative z-30 w-full my-10 rounded-xl"
+  />
     <SeparatorGeneric text="Principales Características" />
 
     <ParagraphMenuPP />

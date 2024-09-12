@@ -1,0 +1,48 @@
+<div id="splide" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="/assets/images/projectPorfolio/code1.png" alt="Slider" />
+      </li>
+      <li class="splide__slide">
+        <img src="/assets/images/projectPorfolio/certi.png" alt="Slider" />
+      </li>
+      <li class="splide__slide">
+        <img src="/assets/images/projectPorfolio/code2.png" alt="Slider" />
+      </li>
+      <li class="splide__slide">
+        <img src="/assets/images/projectPorfolio/skills.png" alt="Slider" />
+      </li>
+      <li class="splide__slide">
+        <img src="/assets/images/projectPorfolio/code3.png" alt="Slider" />
+      </li>
+      <li class="splide__slide">
+        <img src="/assets/images/projectPorfolio/code4.png" alt="Slider" />
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+
+  declare var Splide: any;
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    new Splide("#splide", {
+      type: "loop",
+      gap: "1rem",
+      pagination:true,
+      mediaQuery: "min",
+      breakpoints: {
+        768: {
+    perPage: 1,
+    perMove: 1,
+    snap: true,
+
+  },
+},
+updateOnMove : true,
+    }).mount();
+  });
+</script>
+
