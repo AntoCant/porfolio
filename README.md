@@ -87,15 +87,35 @@ Si prefieres usar Docker para ejecutar el proyecto en un contenedor, sigue estos
 <pre><code>
 /porfolio
 │
-├── /public          # Archivos estáticos
-├── /src             # Código fuente del proyecto
-│   ├── /components  # Componentes reutilizables
-│   ├── /pages       # Páginas de la web
-│   └── /styles      # Estilos CSS globales
+├── /.astro           # Configuraciones generadas por Astro
+├── /.vscode          # Configuraciones específicas de Visual Studio Code
+├── /dist             # Archivos generados para producción
+├── /nginx            # Configuraciones para el servidor Nginx
+├── /node_modules     # Dependencias del proyecto (manejadas por npm)
+├── /public           # Archivos estáticos públicos (imágenes, íconos, etc.)
+├── /src              # Código fuente del proyecto
+│   ├── /assets       # Archivos multimedia como imágenes, fuentes, etc.
+│   ├── /collections  # Colecciones de datos, posiblemente para CMS o markdown
+│   ├── /components   # Componentes reutilizables en la web
+│   ├── /layouts      # Plantillas de diseño para páginas
+│   └── /pages        # Páginas de la web
 │
-├── package.json     # Configuración del proyecto y dependencias
-└── README.md        # Documentación del proyecto
+├── env.d.ts          # Definiciones de tipos para TypeScript
+├── .dockerignore     # Ignora archivos en el contexto de Docker
+├── .editorconfig     # Configuración de estilo de código
+├── .gitignore        # Archivos y carpetas ignorados por Git
+├── .node-version     # Versión de Node.js utilizada en el proyecto
+├── astro.config.mjs  # Configuración principal de Astro
+├── biome.json        # Configuración de Biome (linter/formateador)
+├── Dockerfile        # Instrucciones para construir la imagen Docker del proyecto
+├── LICENSE           # Licencia del proyecto
+├── package.json      # Configuración del proyecto y sus dependencias
+├── package-lock.json # Bloqueo de versiones de las dependencias
+├── pnpm-lock.yaml    # Bloqueo de versiones para el manejador pnpm
+├── tailwind.config.mjs # Configuración de Tailwind CSS
+└── tsconfig.json     # Configuración de TypeScript
 </code></pre>
+
 
 ## Testing
 
@@ -112,28 +132,6 @@ Si prefieres usar Docker para ejecutar el proyecto en un contenedor, sigue estos
 
   <li><strong>Subir los archivos generados</strong> en la carpeta <code>dist/</code> al servidor o plataforma de hosting estático de tu elección.</li>
 </ol>
-
-## Contribuciones
-
-<p>Las contribuciones son bienvenidas. Si deseas contribuir:</p>
-
-<ol>
-  <li>Realiza un fork del repositorio.</li>
-  <li>Crea una rama nueva para tu feature:
-    <pre><code>git checkout -b feature/nueva-feature</code></pre>
-  </li>
-
-  <li>Realiza tus cambios y commitea:
-    <pre><code>git commit -m 'Añadir nueva feature'</code></pre>
-  </li>
-
-  <li>Sube tus cambios:
-    <pre><code>git push origin feature/nueva-feature</code></pre>
-  </li>
-
-  <li>Abre un Pull Request en este repositorio.</li>
-</ol>
-
 
 ## Contacto
 
