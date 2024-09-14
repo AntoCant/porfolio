@@ -113,9 +113,31 @@ Si prefieres usar Docker para ejecutar el proyecto en un contenedor, sigue estos
   <li><strong>Subir los archivos generados</strong> en la carpeta <code>dist/</code> al servidor o plataforma de hosting estático de tu elección.</li>
 </ol>
 
+## Contribuciones
+
+<p>Las contribuciones son bienvenidas. Si deseas contribuir:</p>
+
+<ol>
+  <li>Realiza un fork del repositorio.</li>
+  <li>Crea una rama nueva para tu feature:
+    <pre><code>git checkout -b feature/nueva-feature</code></pre>
+  </li>
+
+  <li>Realiza tus cambios y commitea:
+    <pre><code>git commit -m 'Añadir nueva feature'</code></pre>
+  </li>
+
+  <li>Sube tus cambios:
+    <pre><code>git push origin feature/nueva-feature</code></pre>
+  </li>
+
+  <li>Abre un Pull Request en este repositorio.</li>
+</ol>
+
+
 ## Contacto
 
-<p>Si tienes alguna pregunta, sugerencia o propuesta de colaboración, no dudes en contactarme a través de mi página de contacto o por correo electrónico: <a href="mailto:antonio.canteros.alberto@gmailcom">antonio@example.com</a>.</p>
+<p>Si tienes alguna pregunta, sugerencia o propuesta de colaboración, no dudes en contactarme a través de mi página de contacto o por correo electrónico: <a href="mailto:antonio.canteros.alberto@gmailcom">Mi Mail</a>.</p>
 
 ## Licencia
 
