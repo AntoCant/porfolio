@@ -4,7 +4,6 @@ import Skills from "../../components/skills.astro";
 import SeparatorGeneric from "../../components/separatorGeneric.astro";
 import ParagraphMenuPP from "../../components/paragraphMenuPP.astro";
 import skills from "../../collections/privateSkills.json";
-import contentMapPP from "../../collections/contentMapPP.json";
 
 const projectTitle =
   " Aplicación Móvil para Gestión de Estudiantes y Cursos (Proyecto Privado)";
@@ -29,7 +28,7 @@ const projectDescription =
     />
     <SeparatorGeneric text="Principales Características" />
 
-    <ParagraphMenuPP items={contentMapPP} />
+    <ParagraphMenuPP />
 
     <SeparatorGeneric text="Tecnologías Utilizadas" />
 
@@ -68,7 +67,7 @@ const projectDescription =
   <script src="/src/assets/js/main.js"></script>
   <script>
     window.addEventListener("DOMContentLoaded", () => {
-      (window as any).loadDynamicContent("/src/collections/contentMapPP.json");
+      (window as any).loadDynamicContent("/contentMapPP.json");
     });
   </script>
 </Layout>

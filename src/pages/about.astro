@@ -7,7 +7,6 @@ import educations from "../collections/education.json";
 import ParagraphMenu from "../components/paragraphMenu.astro";
 import SeparatorG from "../components/separatorGeneric.astro";
 import RedirecButton from "../components/redirecButton.astro";
-import contentMap from "../collections/contentMap.json";
 ---
 
 <Layout title="About Me">
@@ -22,7 +21,7 @@ import contentMap from "../collections/contentMap.json";
       class="relative z-30 w-full my-10 rounded-xl"
     />
 
-    <ParagraphMenu items={contentMap}/>
+    <ParagraphMenu />
     <SeparatorG text="Experiencia" />
 
     <h2
@@ -108,7 +107,7 @@ import contentMap from "../collections/contentMap.json";
     <script src="/src/assets/js/main.js"></script>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
-        (window as any).loadDynamicContent("/src/collections/contentMap.json");
+        (window as any).loadDynamicContent("/contentMap.json");
       });
     </script>
   </section>

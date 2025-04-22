@@ -6,7 +6,6 @@ import ParagraphMenuPorfolio from "../../components/paragraphMenuPorfolio.astro"
 import Skills from "../../components/skills.astro";
 import skills from "../../collections/porfolioSkills.json";
 import RedirecButton from "../../components/redirecButton.astro";
-import contentMapPorfolio from "../../collections/contentMapPorfolio.json";
 ---
 
 <Layout title="Mi Portafolio">
@@ -25,7 +24,7 @@ import contentMapPorfolio from "../../collections/contentMapPorfolio.json";
 
     <Carrucel />
     <SeparatorGeneric text="Principales Características" />
-    <ParagraphMenuPorfolio items={contentMapPorfolio}/>
+    <ParagraphMenuPorfolio />
     <SeparatorGeneric text="Tecnologías Usadas" />
     <Skills
       skills={skills.skills}
@@ -78,7 +77,7 @@ import contentMapPorfolio from "../../collections/contentMapPorfolio.json";
 <script>
   window.addEventListener("DOMContentLoaded", () => {
     (window as any).loadDynamicContent(
-      "/src/collections/contentMapPorfolio.json",
+      "/contentMapPorfolio.json",
     );
   });
 </script>
