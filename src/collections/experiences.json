@@ -1,13 +1,20 @@
 [
 	{
-		"dates": "JULIO 2023 - ACTUALIDAD",
+		"dates": "DICIEMBRE 2024 - ACTUALIDAD",
+		"role": "Back-end Developer",
+		"company": "AIRATA",
+		"description": "Desarrollador Back-end con JAVA | Colaborador en Infraestructura.",
+		"logo": "/assets/images/experiences/airata.jpg"
+	},
+	{
+		"dates": "JULIO 2023 - 2024",
 		"role": "Back-end Developer",
 		"company": "Refactoring Life",
 		"description": "Desarrollador de aplicaciones web con Java y Spring Boot.",
 		"logo": "/assets/images/experiences/1.png"
 	},
 	{
-		"dates": "DICIEMBRE 2010 - ACTUALIDAD",
+		"dates": "DICIEMBRE 2010 - 2024",
 		"role": "Electricista Industrial",
 		"company": "LANXESS",
 		"description": "Mantenimiento de equipos eléctricos industriales.",
