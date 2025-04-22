@@ -6,6 +6,7 @@ import ParagraphMenuPorfolio from "../../components/paragraphMenuPorfolio.astro"
 import Skills from "../../components/skills.astro";
 import skills from "../../collections/porfolioSkills.json";
 import RedirecButton from "../../components/redirecButton.astro";
+import contentMapPorfolio from "../../collections/contentMapPorfolio.json";
 ---
 
 <Layout title="Mi Portafolio">
@@ -24,7 +25,7 @@ import RedirecButton from "../../components/redirecButton.astro";
 
     <Carrucel />
     <SeparatorGeneric text="Principales Características" />
-    <ParagraphMenuPorfolio />
+    <ParagraphMenuPorfolio items={contentMapPorfolio}/>
     <SeparatorGeneric text="Tecnologías Usadas" />
     <Skills
       skills={skills.skills}

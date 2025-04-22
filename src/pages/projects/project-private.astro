@@ -4,6 +4,7 @@ import Skills from "../../components/skills.astro";
 import SeparatorGeneric from "../../components/separatorGeneric.astro";
 import ParagraphMenuPP from "../../components/paragraphMenuPP.astro";
 import skills from "../../collections/privateSkills.json";
+import contentMapPP from "../../collections/contentMapPP.json";
 
 const projectTitle =
   " Aplicación Móvil para Gestión de Estudiantes y Cursos (Proyecto Privado)";
@@ -28,7 +29,7 @@ const projectDescription =
     />
     <SeparatorGeneric text="Principales Características" />
 
-    <ParagraphMenuPP />
+    <ParagraphMenuPP items={contentMapPP} />
 
     <SeparatorGeneric text="Tecnologías Utilizadas" />
 
